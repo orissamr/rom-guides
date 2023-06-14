@@ -1,8 +1,8 @@
 const DATA = {
-  title: "PVE Soul Binder",
+  title: "DPS Soul Binder",
   title_icon: "icon_18_5",
   title_class: "sb",
-  tagline: "This DPS build pumps \"Esma\" Ghost damage against Large MVPs.",
+  tagline: 'This PVE build pumps "Esma" Ghost damage against Large MVPs.',
   slots: [
     {
       slot: "Weapon",

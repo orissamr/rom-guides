@@ -52,13 +52,16 @@
     return outerDiv;
   };
 
-  const renderSection = (sectionData) => {
-    const { section, gears } = sectionData;
+  const renderSection = (sectionData, isSubsection) => {
+    const { section, gears, subsections } = sectionData;
 
     const sectionDiv = document.createElement("div");
     sectionDiv.classList.add("section");
+    if (isSubsection) {
+      sectionDiv.classList.add("sub");
+    }
     if (section) {
-      const sectionTitleEl = document.createElement("h2");
+      const sectionTitleEl = document.createElement(isSubsection ? "h3" : "h2");
       sectionTitleEl.innerText = section;
       sectionDiv.appendChild(sectionTitleEl);
     }
@@ -79,6 +82,17 @@
     });
     sectionInnerDiv.appendChild(gearWrapperDiv);
     sectionDiv.appendChild(sectionInnerDiv);
+    if (subsections) {
+      const subsectionDiv = document.createElement("div");
+      subsectionDiv.classList.add("subsection-wrapper");
+      subsectionDiv.classList.add(
+        subsections.align === "column" ? "column" : "row"
+      );
+      subsections.sections.forEach((subsectionData) =>
+        subsectionDiv.appendChild(renderSection(subsectionData, true))
+      );
+      sectionDiv.appendChild(subsectionDiv);
+    }
     return sectionDiv;
   };
 
@@ -126,6 +140,13 @@
     if (title_class) {
       div.classList.add(title_class);
     }
+    const backDiv = document.createElement("div");
+    backDiv.classList.add("back-arrow");
+    const backAnchor = document.createElement("a");
+    backAnchor.href = "./index.html";
+    backAnchor.textContent = "\u2039";
+    backDiv.appendChild(backAnchor);
+    div.appendChild(backDiv);
     if (title_icon) {
       const titleIcon = document.createElement("img");
       titleIcon.src = getImgPath(title_icon);

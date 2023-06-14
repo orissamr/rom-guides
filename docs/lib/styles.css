@@ -23,10 +23,14 @@ h1 {
   text-align: center;
   margin-bottom: 8px;
 }
-h2 {
+h2,
+h3 {
   font-weight: lighter;
   font-style: italic;
   margin: 0;
+}
+h3 {
+  text-decoration: underline;
 }
 .bold {
   font-weight: 600;
@@ -72,6 +76,25 @@ h2 {
     rgb(101, 9, 121) 35%,
     rgb(248, 0, 255) 100%
   );
+}
+.title::after {
+  flex: 1;
+  content: "";
+}
+.title .back-arrow {
+  flex: 1;
+  display: flex;
+  min-width: 24px;
+}
+.title .back-arrow a {
+  font-size: 2.6em;
+  font-weight: lighter;
+  line-height: 1;
+  opacity: 0.5;
+  transition: opacity ease-in-out 0.15s;
+}
+.title .back-arrow a:hover {
+  opacity: 1;
 }
 .title img {
   height: 48px;
@@ -121,8 +144,23 @@ h2 {
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
   margin: 8px 0;
 }
+.subsection-wrapper {
+  display: flex;
+}
+.subsection-wrapper.column {
+  flex-direction: column;
+}
+.subsection-wrapper.row {
+  flex-direction: row;
+  gap: 16px;
+}
+.section.sub {
+  padding: 0;
+  box-shadow: none;
+}
 .section-inner {
   display: flex;
+  gap: 16px;
 }
 .gear-wrapper {
   display: flex;
@@ -183,14 +221,25 @@ h2 {
   font-weight: lighter;
   font-style: italic;
 }
-@media screen and (max-device-width: 640px) {
+@media screen and (max-width: 640px) {
+  .title {
+    font-size: 0.85em;
+  }
   .section-wrapper {
     flex-direction: column;
     gap: 0;
   }
   .section-inner {
     flex-direction: column;
-    gap: 16px;
+  }
+  .subsection-wrapper.row {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+@media screen and (min-width: 920px) {
+  .gear > .right {
+    width: 320px;
   }
 }
 #root.bg {
