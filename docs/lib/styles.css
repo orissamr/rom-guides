@@ -241,7 +241,18 @@ h2 {
   height: 42px;
 }
 .index .guide > span {
+  flex-grow: 1;
   font-size: 1.3em;
   font-weight: lighter;
   text-align: center;
+}
+@media screen and (max-width: 640px) {
+  .index .guides {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 320px) {
+  .index .nowrap {
+    white-space: nowrap;
+  }
 }
