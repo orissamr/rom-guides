@@ -287,11 +287,12 @@ h3 {
   border: 1px solid #8f8f8f;
 }
 .index .guide > img {
-  height: 42px;
+  height: 32px;
 }
 .index .guide > span {
   flex-grow: 1;
-  font-size: 1.3em;
+  font-size: 1.1em;
+  line-height: 1.2;
   font-weight: lighter;
   text-align: center;
 }
