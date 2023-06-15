@@ -503,6 +503,12 @@ const DATA = {
               note: "May 2021 Blue Gacha",
             },
             {
+              name: "Holy Night Blessing",
+              icon: "3004870",
+              stat: "12% Skill Dmg",
+              note: "Dec 2021 Blue Gacha",
+            },
+            {
               name: "+X Saint Token",
               icon: "149627",
               stat: "2% Skill Dmg +1% per refine",

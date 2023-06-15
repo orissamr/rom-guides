@@ -681,6 +681,13 @@ const DATA = {
               stat: "10% Fire/Water/Wind/Earth Dmg, 10% Final Dmg to weak element",
               note: "May 2022 Blue Gacha",
             },
+            { br: true },
+            {
+              name: "Holy Night Blessing",
+              icon: "3004870",
+              stat: "12% Skill Dmg",
+              note: "Dec 2021 Blue Gacha",
+            },
             {
               name: "+X Saint Token",
               icon: "149627",
