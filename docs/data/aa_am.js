@@ -614,11 +614,16 @@ const DATA = {
               icon_card: "24118",
               stat: "2% Skill Dmg, 3% Dmg to Non-Demihuman Race",
             },
-            { br: true },
             {
               name: "Fire Witch ★ Card",
               icon_card: "24623",
               stat: "8% Ignore MDef",
+            },
+            { br: true },
+            {
+              name: "Galion ★ Card",
+              icon_card: "24660",
+              stat: "5% Wind Dmg",
             },
             {
               name: "Magic Snake Card",
