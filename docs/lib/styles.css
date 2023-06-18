@@ -110,12 +110,12 @@ h3 {
   font-weight: lighter;
   text-align: center;
 }
-.slot {
+.category {
   display: flex;
   flex-direction: column;
   padding-bottom: 8px;
 }
-.slot h1 {
+.category h1 {
   cursor: pointer;
   user-select: none;
   padding-bottom: 16px;
@@ -162,18 +162,18 @@ h3 {
   display: flex;
   gap: 16px;
 }
-.gear-wrapper {
+.entry-group {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   gap: 16px;
 }
-.gear {
+.entry {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-.gear > .left {
+.entry > .left {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -182,23 +182,48 @@ h3 {
   min-height: 48px;
   border-radius: 6px;
 }
-.gear > .left > img {
+.entry > .left.skill {
+  border: none;
+}
+.entry > .left > img {
   max-width: 40px;
   max-height: 40px;
 }
-.gear > .left > img.card {
+.entry > .left.card > img {
   max-height: initial;
 }
-.gear > .right > .secondary {
-  font-size: 0.85em;
+.entry > .left.skill > img {
+  max-width: 48px;
+  max-height: 48px;
+  padding-right: 2px;
 }
-.gear > .right > .secondary > .stat {
+.entry > .right > .entry-name {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  line-height: 1.2;
+}
+.entry > .right > .entry-name > .chip {
+  font-size: 0.58em;
+  font-weight: lighter;
+  letter-spacing: -0.04em;
+  white-space: nowrap;
+  padding: 0 4px;
+  background-color: rgba(243, 246, 249, 0.5);
+  border: 1px solid #b2bac2;
+  border-radius: 16px;
+}
+.entry > .right > .secondary {
+  font-size: 0.85em;
+  line-height: 1.1;
+}
+.entry > .right > .secondary > .stat {
   color: #1c1cff;
 }
-.gear > .right > .secondary > .ae {
+.entry > .right > .secondary > .ae {
   font-style: italic;
 }
-.gear > .right > .secondary > .note {
+.entry > .right > .secondary > .note {
   font-weight: lighter;
   font-size: 0.9em;
 }
@@ -238,7 +263,7 @@ h3 {
   }
 }
 @media screen and (min-width: 920px) {
-  .gear > .right {
+  .entry > .right {
     width: 320px;
   }
 }

@@ -4,14 +4,14 @@ const DATA = {
   title_class: "am",
   tagline:
     "This Auto-Attack build optimizes for Wind burst damage while maintaining survivability.",
-  slots: [
+  categories: [
     {
-      slot: "Weapon",
+      category: "Weapon",
       sections: [
         {
           section: "",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Scepter of Shadowy Wind",
               icon: "40506",
@@ -21,7 +21,7 @@ const DATA = {
         {
           section: "Cards",
           row: 2,
-          gears: [
+          entries: [
             {
               name: "Shell Chepet ★ Card",
               icon_card: "24113",
@@ -39,87 +39,89 @@ const DATA = {
               stat: "10% Skill Dmg (+1% w/ depo)",
             },
           ],
-          subsections: {
-            align: "column",
-            sections: [
-              {
-                section: "PVP",
-                gears: [
-                  {
-                    name: "Hydra ★ Card",
-                    bold: true,
-                    icon_card: "24110",
-                    stat: "15% Dmg to Demihuman Race, 5% Dmg to Players (+1% w/ depo)",
-                  },
-                  {
-                    name: "Stormy Knight ★ Card",
-                    icon_card: "24637",
-                    stat: '5% All Race Dmg, 20% Freeze Chance, 5% "Storm Gust" proc on AA',
-                    note: "recommended for GVG",
-                  },
-                  {
-                    name: "Dead Stormy Knight Card",
-                    icon_card: "24519",
-                    stat: "5% All Race Dmg, No Freeze Break, 10% Dmg to Frozen targets w/ Stormy Knight ★ Card",
-                    note: "recommended for GVG",
-                  },
-                  { br: true },
-                  {
-                    name: "Bloody Knight ★ Card",
-                    light: true,
-                    icon_card: "24630",
-                    stat: '5% AA Dmg, 5% "Meteor Storm" proc on AA +3% w/ Pale Lord Card',
-                    note: "NOT recommended",
-                  },
-                  {
-                    name: "Pale Lord Card",
-                    light: true,
-                    icon_card: "24055",
-                    stat: "10% AA Dmg +5% w/ Bloody Knight ★ Card",
-                    note: "NOT recommended",
-                  },
-                ],
-              },
-              {
-                section: "PVE",
-                gears: [
-                  {
-                    name: "Fire Bird Chiri ★ Card",
-                    icon_card: "24668",
-                    stat: "45% Ignore MDef vs. MVP (+5% w/ depo)",
-                  },
-                  {
-                    name: "Abysmal Knight ★ Card",
-                    icon_card: "24117",
-                    stat: "15% Dmg to MVP (+5% w/ depo)",
-                  },
-                  { br: true },
-                  {
-                    name: "Channeller Card",
-                    icon_card: "23265",
-                    stat: "15% Final Dmg to Large, 5% Dmg to MVP",
-                    note: "BCC Box",
-                  },
-                  {
-                    name: "Seed of Yggdrasil Card",
-                    icon_card: "23056",
-                    stat: "5% Magic Lifesteal",
-                    note: "for survivability in most content",
-                  },
-                ],
-              },
-            ],
-          },
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "PVP",
+                  entries: [
+                    {
+                      name: "Hydra ★ Card",
+                      bold: true,
+                      icon_card: "24110",
+                      stat: "15% Dmg to Demihuman Race, 5% Dmg to Players (+1% w/ depo)",
+                    },
+                    {
+                      name: "Stormy Knight ★ Card",
+                      icon_card: "24637",
+                      stat: '5% All Race Dmg, 20% Freeze Chance, 5% "Storm Gust" proc on AA',
+                      note: "recommended for GVG",
+                    },
+                    {
+                      name: "Dead Stormy Knight Card",
+                      icon_card: "24519",
+                      stat: "5% All Race Dmg, No Freeze Break, 10% Dmg to Frozen targets w/ Stormy Knight ★ Card",
+                      note: "recommended for GVG",
+                    },
+                    { br: true },
+                    {
+                      name: "Bloody Knight ★ Card",
+                      light: true,
+                      icon_card: "24630",
+                      stat: '5% AA Dmg, 5% "Meteor Storm" proc on AA +3% w/ Pale Lord Card',
+                      note: "NOT recommended",
+                    },
+                    {
+                      name: "Pale Lord Card",
+                      light: true,
+                      icon_card: "24055",
+                      stat: "10% AA Dmg +5% w/ Bloody Knight ★ Card",
+                      note: "NOT recommended",
+                    },
+                  ],
+                },
+                {
+                  section: "PVE",
+                  entries: [
+                    {
+                      name: "Fire Bird Chiri ★ Card",
+                      icon_card: "24668",
+                      stat: "45% Ignore MDef vs. MVP (+5% w/ depo)",
+                    },
+                    {
+                      name: "Abysmal Knight ★ Card",
+                      icon_card: "24117",
+                      stat: "15% Dmg to MVP (+5% w/ depo)",
+                    },
+                    { br: true },
+                    {
+                      name: "Channeller Card",
+                      icon_card: "23265",
+                      stat: "15% Final Dmg to Large, 5% Dmg to MVP",
+                      note: "BCC Box",
+                    },
+                    {
+                      name: "Seed of Yggdrasil Card",
+                      icon_card: "23056",
+                      stat: "5% Magic Lifesteal",
+                      note: "for survivability in most content",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
       ],
     },
     {
-      slot: "Off-Hand",
+      category: "Off-Hand",
       sections: [
         {
           section: "Main",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Othershore Web",
               bold: true,
@@ -148,7 +150,7 @@ const DATA = {
         {
           section: "Shadow",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Creeper Agreement",
               icon: "42586",
@@ -164,7 +166,7 @@ const DATA = {
         {
           section: "Cards",
           row: 2,
-          gears: [
+          entries: [
             {
               name: "Wicked Sunflower ★ Card",
               bold: true,
@@ -186,57 +188,59 @@ const DATA = {
               stat: "5% All Race Dmg",
             },
           ],
-          subsections: {
-            align: "row",
-            sections: [
-              {
-                section: "PVP",
-                gears: [
-                  {
-                    name: "Thara Frog ★ Card",
-                    icon_card: "24048",
-                    stat: "3% Dmg to Demihuman, 3% Demihuman Reduc",
-                  },
-                  {
-                    name: "Ore Spirit Card",
-                    icon_card: "22044",
-                    stat: "Final Dmg +5% per abnormal status",
-                    note: "does NOT count Electrify/Alight",
-                  },
-                  {
-                    name: "Maya ★ Card",
-                    icon_card: "24606",
-                    stat: "20% Magic Reflect",
-                  },
-                ],
-              },
-              {
-                section: "PVE",
-                gears: [
-                  {
-                    name: "Alice ★ Card",
-                    icon_card: "24634",
-                    stat: "15% Dmg to MVP",
-                  },
-                  {
-                    name: "Meryl Rowlands Card",
-                    icon_card: "23152",
-                    stat: "5% Dmg to MVP",
-                  },
-                ],
-              },
-            ],
-          },
+          subsections: [
+            {
+              align: "row",
+              sections: [
+                {
+                  section: "PVP",
+                  entries: [
+                    {
+                      name: "Thara Frog ★ Card",
+                      icon_card: "24048",
+                      stat: "3% Dmg to Demihuman, 3% Demihuman Reduc",
+                    },
+                    {
+                      name: "Ore Spirit Card",
+                      icon_card: "22044",
+                      stat: "Final Dmg +5% per abnormal status",
+                      note: "does NOT count Electrify/Alight",
+                    },
+                    {
+                      name: "Maya ★ Card",
+                      icon_card: "24606",
+                      stat: "20% Magic Reflect",
+                    },
+                  ],
+                },
+                {
+                  section: "PVE",
+                  entries: [
+                    {
+                      name: "Alice ★ Card",
+                      icon_card: "24634",
+                      stat: "15% Dmg to MVP",
+                    },
+                    {
+                      name: "Meryl Rowlands Card",
+                      icon_card: "23152",
+                      stat: "5% Dmg to MVP",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
       ],
     },
     {
-      slot: "Armor",
+      category: "Armor",
       sections: [
         {
           section: "Main",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Dreameater's Disguise",
               icon: "42155",
@@ -247,7 +251,7 @@ const DATA = {
         {
           section: "Shadow",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Star Shatter's Gown",
               icon: "42090",
@@ -262,7 +266,7 @@ const DATA = {
         {
           section: "Cards",
           row: 2,
-          gears: [
+          entries: [
             {
               name: "Nightmare ★ Card",
               bold: true,
@@ -299,56 +303,58 @@ const DATA = {
               stat: "8% MAtk",
             },
           ],
-          subsections: {
-            align: "row",
-            sections: [
-              {
-                section: "PVP",
-                gears: [
-                  {
-                    name: "Thara Frog Card",
-                    light: true,
-                    icon_card: "20024",
-                    stat: "30% Demihuman Reduc",
-                    note: "for survivability?",
-                  },
-                  {
-                    name: "Ghostring Card",
-                    light: true,
-                    icon_card: "22004",
-                    stat: "Ghost armor",
-                    note: "for survivability?",
-                  },
-                ],
-              },
-              {
-                section: "PVE",
-                gears: [
-                  {
-                    name: "Poi Tata ★ Card",
-                    bold: true,
-                    icon_card: "24670",
-                    stat: "25% Dmg to Non-Demihuman Race",
-                  },
-                  {
-                    name: "Hart Card",
-                    icon_card: "23153",
-                    stat: "10% Dmg to MVP",
-                  },
-                ],
-              },
-            ],
-          },
+          subsections: [
+            {
+              align: "row",
+              sections: [
+                {
+                  section: "PVP",
+                  entries: [
+                    {
+                      name: "Thara Frog Card",
+                      light: true,
+                      icon_card: "20024",
+                      stat: "30% Demihuman Reduc",
+                      note: "for survivability?",
+                    },
+                    {
+                      name: "Ghostring Card",
+                      light: true,
+                      icon_card: "22004",
+                      stat: "Ghost armor",
+                      note: "for survivability?",
+                    },
+                  ],
+                },
+                {
+                  section: "PVE",
+                  entries: [
+                    {
+                      name: "Poi Tata ★ Card",
+                      bold: true,
+                      icon_card: "24670",
+                      stat: "25% Dmg to Non-Demihuman Race",
+                    },
+                    {
+                      name: "Hart Card",
+                      icon_card: "23153",
+                      stat: "10% Dmg to MVP",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
       ],
     },
     {
-      slot: "Garment",
+      category: "Garment",
       sections: [
         {
           section: "Main",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Classic Robe",
               bold: true,
@@ -360,7 +366,7 @@ const DATA = {
         {
           section: "Shadow",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Divine Feather Clothes",
               icon: "43063",
@@ -370,7 +376,7 @@ const DATA = {
         {
           section: "Cards",
           row: 2,
-          gears: [
+          entries: [
             {
               name: "Zanubia Card",
               bold: true,
@@ -398,48 +404,50 @@ const DATA = {
               note: "in your dreams",
             },
           ],
-          subsections: {
-            align: "row",
-            sections: [
-              {
-                section: "PVP",
-                gears: [
-                  {
-                    name: "Devil Squid Card",
-                    icon_card: "23058",
-                    stat: 'Learn "Stealth" (+10% MDmg when hiding)',
-                    note: "only useful with Moonlight Flower ★ Card",
-                  },
-                  {
-                    name: "Jakk Card",
-                    icon_card: "22012",
-                    stat: "30% Fire Reduc (+20% w/ depo)",
-                    note: "for survivability",
-                  },
-                ],
-              },
-              {
-                section: "PVE",
-                gears: [
-                  {
-                    name: "Mayfair Linse Card",
-                    icon_card: "23154",
-                    stat: "5% Dmg to MVP",
-                  },
-                ],
-              },
-            ],
-          },
+          subsections: [
+            {
+              align: "row",
+              sections: [
+                {
+                  section: "PVP",
+                  entries: [
+                    {
+                      name: "Devil Squid Card",
+                      icon_card: "23058",
+                      stat: 'Learn "Stealth" (+10% MDmg when hiding)',
+                      note: "only useful with Moonlight Flower ★ Card",
+                    },
+                    {
+                      name: "Jakk Card",
+                      icon_card: "22012",
+                      stat: "30% Fire Reduc (+20% w/ depo)",
+                      note: "for survivability",
+                    },
+                  ],
+                },
+                {
+                  section: "PVE",
+                  entries: [
+                    {
+                      name: "Mayfair Linse Card",
+                      icon_card: "23154",
+                      stat: "5% Dmg to MVP",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
       ],
     },
     {
-      slot: "Shoes",
+      category: "Shoes",
       sections: [
         {
           section: "Main",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Orderly Ankle Boots",
               bold: true,
@@ -452,26 +460,28 @@ const DATA = {
               ae_attr: "6% MDmg",
             },
           ],
-          subsections: {
-            align: "column",
-            sections: [
-              {
-                section: "PVP",
-                gears: [
-                  {
-                    name: "Shackles",
-                    icon: "43571",
-                    note: 'Bleed proc to trigger "Status Vulnerability" passive +25% Dmg',
-                  },
-                ],
-              },
-            ],
-          },
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "PVP",
+                  entries: [
+                    {
+                      name: "Shackles",
+                      icon: "43571",
+                      note: 'Bleed proc to trigger "Status Vulnerability" passive +25% Dmg',
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
         {
           section: "Shadow",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "White Gem Boots",
               icon: "43581",
@@ -490,7 +500,7 @@ const DATA = {
         {
           section: "Cards",
           row: 2,
-          gears: [
+          entries: [
             {
               name: "Dark Lord ★ Card",
               bold: true,
@@ -539,32 +549,34 @@ const DATA = {
               note: "in your dreams",
             },
           ],
-          subsections: {
-            align: "row",
-            sections: [
-              {
-                section: "PVP",
-                gears: [
-                  {
-                    name: "Fallen Bishop Card",
-                    bold: true,
-                    icon_card: "22036",
-                    stat: "15% Dmg to Demihuman",
-                  },
-                ],
-              },
-            ],
-          },
+          subsections: [
+            {
+              align: "row",
+              sections: [
+                {
+                  section: "PVP",
+                  entries: [
+                    {
+                      name: "Fallen Bishop Card",
+                      bold: true,
+                      icon_card: "22036",
+                      stat: "15% Dmg to Demihuman",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
       ],
     },
     {
-      slot: "Accessories",
+      category: "Accessories",
       sections: [
         {
           section: "Main",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Floral Hair Clip",
               bold: true,
@@ -588,7 +600,7 @@ const DATA = {
         {
           section: "Shadow",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Tibbers' Hand",
               icon: "44049",
@@ -602,7 +614,7 @@ const DATA = {
         {
           section: "Cards",
           row: 2,
-          gears: [
+          entries: [
             {
               name: "Witch of Calamity Card",
               bold: true,
@@ -631,48 +643,50 @@ const DATA = {
               stat: "2% MPen",
             },
           ],
-          subsections: {
-            align: "row",
-            sections: [
-              {
-                section: "PVP",
-                gears: [
-                  {
-                    name: "Horong ★ Card",
-                    bold: true,
-                    icon_card: "24100",
-                    stat: '"Sight" range increased by 3 meters',
-                  },
-                  {
-                    name: "Wraith ★ Card",
-                    icon_card: "24085",
-                    stat: "25% Stun/Freeze chance and duration",
-                    note: 'for "Chain Lightning"',
-                  },
-                ],
-              },
-              {
-                section: "PVE",
-                gears: [
-                  {
-                    name: "Ultraman Card",
-                    icon_card: "23114",
-                    stat: "8% Dmg to Brute/Demon",
-                  },
-                ],
-              },
-            ],
-          },
+          subsections: [
+            {
+              align: "row",
+              sections: [
+                {
+                  section: "PVP",
+                  entries: [
+                    {
+                      name: "Horong ★ Card",
+                      bold: true,
+                      icon_card: "24100",
+                      stat: '"Sight" range increased by 3 meters',
+                    },
+                    {
+                      name: "Wraith ★ Card",
+                      icon_card: "24085",
+                      stat: "25% Stun/Freeze chance and duration",
+                      note: 'for "Chain Lightning"',
+                    },
+                  ],
+                },
+                {
+                  section: "PVE",
+                  entries: [
+                    {
+                      name: "Ultraman Card",
+                      icon_card: "23114",
+                      stat: "8% Dmg to Brute/Demon",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
       ],
     },
     {
-      slot: "Headgear",
+      category: "Headgear",
       sections: [
         {
           section: "",
           row: 1,
-          gears: [
+          entries: [
             {
               name: 'Wheel of Fortune - Four-leaf Clover ("Koi")',
               bold: true,
@@ -700,56 +714,58 @@ const DATA = {
               note: "F2P",
             },
           ],
-          subsections: {
-            align: "row",
-            sections: [
-              {
-                section: "PVP",
-                gears: [
-                  {
-                    name: "+X Witch's Oath",
-                    icon: "149648",
-                    stat: "5% Final Dmg to Medium +1% per refine",
-                    note: "F2P",
-                  },
-                  {
-                    name: "Eggshell Biu",
-                    icon: "149081",
-                    stat: "Immune to Equipment Break",
-                    note: "Time Wish",
-                  },
-                ],
-              },
-              {
-                section: "PVE",
-                gears: [
-                  {
-                    name: "Music of Soul",
-                    icon: "3007190",
-                    stat: "25% Final Dmg to Large",
-                    note: "Feb 2023 Blue Gacha",
-                  },
-                  {
-                    name: "+6 Bashful Moment",
-                    icon: "3003390",
-                    stat: "15% Dmg to MVP",
-                    note: "May 2021 Blue Gacha",
-                  },
-                  {
-                    name: "Poring Sleeping Hat",
-                    icon: "3007221",
-                    stat: "Anti-fatal every 90sec",
-                    note: "May 2023 Blue Gacha",
-                  },
-                ],
-              },
-            ],
-          },
+          subsections: [
+            {
+              align: "row",
+              sections: [
+                {
+                  section: "PVP",
+                  entries: [
+                    {
+                      name: "+X Witch's Oath",
+                      icon: "149648",
+                      stat: "5% Final Dmg to Medium +1% per refine",
+                      note: "F2P",
+                    },
+                    {
+                      name: "Eggshell Biu",
+                      icon: "149081",
+                      stat: "Immune to Equipment Break",
+                      note: "Time Wish",
+                    },
+                  ],
+                },
+                {
+                  section: "PVE",
+                  entries: [
+                    {
+                      name: "Music of Soul",
+                      icon: "3007190",
+                      stat: "25% Final Dmg to Large",
+                      note: "Feb 2023 Blue Gacha",
+                    },
+                    {
+                      name: "+6 Bashful Moment",
+                      icon: "3003390",
+                      stat: "15% Dmg to MVP",
+                      note: "May 2021 Blue Gacha",
+                    },
+                    {
+                      name: "Poring Sleeping Hat",
+                      icon: "3007221",
+                      stat: "Anti-fatal every 90sec",
+                      note: "May 2023 Blue Gacha",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
         {
           section: "Cards",
           row: 2,
-          gears: [
+          entries: [
             {
               name: "Walter Card",
               icon_card: "23067",
@@ -774,53 +790,55 @@ const DATA = {
               note: "in your dreams",
             },
           ],
-          subsections: {
-            align: "row",
-            sections: [
-              {
-                section: "PVP",
-                gears: [
-                  {
-                    name: "Mentalist Card",
-                    icon_card: "24621",
-                    stat: "Immune to Fear",
-                  },
-                  {
-                    name: "Nightmare Card",
-                    icon_card: "20065",
-                    stat: "Immune to Sleep",
-                  },
-                  {
-                    name: "Orc Hero Card",
-                    light: true,
-                    icon_card: "23014",
-                    stat: "Immune to Stun",
-                    note: "in your dreams",
-                  },
-                ],
-              },
-              {
-                section: "PVE",
-                gears: [
-                  {
-                    name: "Norman Card",
-                    icon_card: "23155",
-                    stat: "5% Dmg to MVP",
-                  },
-                ],
-              },
-            ],
-          },
+          subsections: [
+            {
+              align: "row",
+              sections: [
+                {
+                  section: "PVP",
+                  entries: [
+                    {
+                      name: "Mentalist Card",
+                      icon_card: "24621",
+                      stat: "Immune to Fear",
+                    },
+                    {
+                      name: "Nightmare Card",
+                      icon_card: "20065",
+                      stat: "Immune to Sleep",
+                    },
+                    {
+                      name: "Orc Hero Card",
+                      light: true,
+                      icon_card: "23014",
+                      stat: "Immune to Stun",
+                      note: "in your dreams",
+                    },
+                  ],
+                },
+                {
+                  section: "PVE",
+                  entries: [
+                    {
+                      name: "Norman Card",
+                      icon_card: "23155",
+                      stat: "5% Dmg to MVP",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
       ],
     },
     {
-      slot: "Face",
+      category: "Face",
       sections: [
         {
           section: "",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Winter Crown",
               icon: "3002900",
@@ -848,43 +866,45 @@ const DATA = {
               note: "F2P",
             },
           ],
-          subsections: {
-            align: "row",
-            sections: [
-              {
-                section: "PVP",
-                gears: [
-                  {
-                    name: "Goblin Leader Mask",
-                    icon: "48517",
-                    stat: "30% Demihuman Reduc",
-                    note: "F2P",
-                  },
-                ],
-              },
-              {
-                section: "PVE",
-                gears: [
-                  {
-                    name: "+6 Cute Blower",
-                    icon: "3006940",
-                    stat: "15% Dmg to MVP",
-                    note: "Dec 2022 Blue Gacha",
-                  },
-                ],
-              },
-            ],
-          },
+          subsections: [
+            {
+              align: "row",
+              sections: [
+                {
+                  section: "PVP",
+                  entries: [
+                    {
+                      name: "Goblin Leader Mask",
+                      icon: "48517",
+                      stat: "30% Demihuman Reduc",
+                      note: "F2P",
+                    },
+                  ],
+                },
+                {
+                  section: "PVE",
+                  entries: [
+                    {
+                      name: "+6 Cute Blower",
+                      icon: "3006940",
+                      stat: "15% Dmg to MVP",
+                      note: "Dec 2022 Blue Gacha",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
       ],
     },
     {
-      slot: "Mouth",
+      category: "Mouth",
       sections: [
         {
           section: "",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Light Food",
               icon: "3003060",
@@ -911,39 +931,41 @@ const DATA = {
               note: "May 2022 Blue Gacha",
             },
           ],
-          subsections: {
-            align: "column",
-            sections: [
-              {
-                section: "PVE",
-                gears: [
-                  {
-                    name: "Huge Bounty",
-                    icon: "3004862",
-                    stat: "10% Dmg to MVP",
-                    note: "Nov 2021 Blue Gacha",
-                  },
-                  { br: true },
-                  {
-                    name: "Eternal Kingship",
-                    icon: "48771",
-                    stat: "8% Dmg to MVP",
-                    note: "F2P Kafra Adventure Log",
-                  },
-                ],
-              },
-            ],
-          },
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "PVE",
+                  entries: [
+                    {
+                      name: "Huge Bounty",
+                      icon: "3004862",
+                      stat: "10% Dmg to MVP",
+                      note: "Nov 2021 Blue Gacha",
+                    },
+                    { br: true },
+                    {
+                      name: "Eternal Kingship",
+                      icon: "48771",
+                      stat: "8% Dmg to MVP",
+                      note: "F2P Kafra Adventure Log",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
       ],
     },
     {
-      slot: "Back",
+      category: "Back",
       sections: [
         {
           section: "",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "+6 Encomiast's Movement",
               bold: true,
@@ -977,47 +999,49 @@ const DATA = {
               note: 'Mar 2021 Blue Gacha, for permanent "White Barrier"',
             },
           ],
-          subsections: {
-            align: "column",
-            sections: [
-              {
-                section: "PVE",
-                gears: [
-                  {
-                    name: "+6 Goodwill Giftbox",
-                    icon: "47107",
-                    stat: "15% Dmg to MVP",
-                    note: "Time Wish",
-                  },
-                  {
-                    name: "Dark Moon Shine",
-                    light: true,
-                    icon: "3033307",
-                    stat: "8% Dmg to MVP",
-                    note: "F2P",
-                  },
-                  { br: true },
-                  {
-                    name: "Siren Touch",
-                    light: true,
-                    icon: "47255",
-                    stat: "5% Dmg to MVP +0.5% per refine",
-                    note: "F2P",
-                  },
-                ],
-              },
-            ],
-          },
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "PVE",
+                  entries: [
+                    {
+                      name: "+6 Goodwill Giftbox",
+                      icon: "47107",
+                      stat: "15% Dmg to MVP",
+                      note: "Time Wish",
+                    },
+                    {
+                      name: "Dark Moon Shine",
+                      light: true,
+                      icon: "3033307",
+                      stat: "8% Dmg to MVP",
+                      note: "F2P",
+                    },
+                    { br: true },
+                    {
+                      name: "Siren Touch",
+                      light: true,
+                      icon: "47255",
+                      stat: "5% Dmg to MVP +0.5% per refine",
+                      note: "F2P",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
       ],
     },
     {
-      slot: "Tail",
+      category: "Tail",
       sections: [
         {
           section: "",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Beautiful Ensemble",
               icon: "3004620",
@@ -1062,29 +1086,31 @@ const DATA = {
               note: "F2P",
             },
           ],
-          subsections: {
-            align: "column",
-            sections: [
-              {
-                section: "PVE",
-                gears: [
-                  {
-                    name: "Rock Bunny",
-                    icon: "3005690",
-                    stat: "10% Dmg to MVP",
-                    note: "Apr 2022 Blue Gacha",
-                  },
-                  { br: true },
-                  {
-                    name: "+X Summer Banana Split",
-                    icon: "48080",
-                    stat: "3% Dmg to MVP +0.5% per refine",
-                    note: "F2P",
-                  },
-                ],
-              },
-            ],
-          },
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "PVE",
+                  entries: [
+                    {
+                      name: "Rock Bunny",
+                      icon: "3005690",
+                      stat: "10% Dmg to MVP",
+                      note: "Apr 2022 Blue Gacha",
+                    },
+                    { br: true },
+                    {
+                      name: "+X Summer Banana Split",
+                      icon: "48080",
+                      stat: "3% Dmg to MVP +0.5% per refine",
+                      note: "F2P",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
         },
       ],
     },

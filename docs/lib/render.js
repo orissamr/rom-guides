@@ -1,33 +1,62 @@
 (function () {
   const getImgPath = (icon) => `./rom/${icon}.png`;
 
-  const renderGear = (gearData) => {
-    const { name, bold, light, icon, icon_card, stat, ae_attr, note } =
-      gearData;
+  const renderEntry = (entryData) => {
+    const {
+      name,
+      type,
+      tags,
+      bold,
+      light,
+      icon,
+      icon_card,
+      icon_skill,
+      stat,
+      ae_attr,
+      note,
+    } = entryData;
 
     const outerDiv = document.createElement("div");
-    outerDiv.classList.add("gear");
+    outerDiv.classList.add("entry");
     {
       const leftDiv = document.createElement("div");
       leftDiv.classList.add("left");
-      const gearImg = document.createElement("img");
-      gearImg.src = getImgPath(icon || icon_card);
-      if (icon_card) {
-        gearImg.classList.add("card");
+      if (icon_skill) {
+        leftDiv.classList.add("skill");
       }
-      leftDiv.appendChild(gearImg);
+      if (icon_card) {
+        leftDiv.classList.add("card");
+      }
+      const iconSrc = icon || icon_card || icon_skill;
+      if (iconSrc) {
+        const iconImg = document.createElement("img");
+        iconImg.src = getImgPath(iconSrc);
+        leftDiv.appendChild(iconImg);
+      }
       outerDiv.appendChild(leftDiv);
     }
     {
       const rightDiv = document.createElement("div");
       rightDiv.classList.add("right");
       const nameDiv = document.createElement("div");
+      nameDiv.classList.add("entry-name");
+      const nameSpan = document.createElement("span");
       if (bold) {
-        nameDiv.classList.add("bold");
+        nameSpan.classList.add("bold");
       } else if (light) {
-        nameDiv.classList.add("light");
+        nameSpan.classList.add("light");
       }
-      nameDiv.innerText = name;
+      nameSpan.innerText = name;
+      nameDiv.appendChild(nameSpan);
+      const chips = [type, ...(tags || [])];
+      chips
+        .filter((chipText) => !!chipText)
+        .forEach((chipText) => {
+          const typeSpan = document.createElement("span");
+          typeSpan.classList.add("chip");
+          typeSpan.innerText = chipText;
+          nameDiv.appendChild(typeSpan);
+        });
       rightDiv.appendChild(nameDiv);
       const secondaryDiv = document.createElement("div");
       secondaryDiv.classList.add("secondary");
@@ -53,7 +82,7 @@
   };
 
   const renderSection = (sectionData, isSubsection) => {
-    const { section, gears, subsections } = sectionData;
+    const { section, entries, subsections } = sectionData;
 
     const sectionDiv = document.createElement("div");
     sectionDiv.classList.add("section");
@@ -65,45 +94,49 @@
       sectionTitleEl.innerText = section;
       sectionDiv.appendChild(sectionTitleEl);
     }
-    const sectionInnerDiv = document.createElement("div");
-    sectionInnerDiv.classList.add("section-inner");
-    let gearWrapperDiv;
-    gears.forEach(({ br, ...gearData }) => {
-      if (br) {
-        sectionInnerDiv.appendChild(gearWrapperDiv);
-        gearWrapperDiv = undefined;
-        return;
-      }
-      if (!gearWrapperDiv) {
-        gearWrapperDiv = document.createElement("div");
-        gearWrapperDiv.classList.add("gear-wrapper");
-      }
-      gearWrapperDiv.appendChild(renderGear(gearData));
-    });
-    sectionInnerDiv.appendChild(gearWrapperDiv);
-    sectionDiv.appendChild(sectionInnerDiv);
+    if (entries && entries.length) {
+      const sectionInnerDiv = document.createElement("div");
+      sectionInnerDiv.classList.add("section-inner");
+      let entryGroupDiv;
+      entries.forEach(({ br, ...entryData }) => {
+        if (br) {
+          sectionInnerDiv.appendChild(entryGroupDiv);
+          entryGroupDiv = undefined;
+          return;
+        }
+        if (!entryGroupDiv) {
+          entryGroupDiv = document.createElement("div");
+          entryGroupDiv.classList.add("entry-group");
+        }
+        entryGroupDiv.appendChild(renderEntry(entryData));
+      });
+      sectionInnerDiv.appendChild(entryGroupDiv);
+      sectionDiv.appendChild(sectionInnerDiv);
+    }
     if (subsections) {
-      const subsectionDiv = document.createElement("div");
-      subsectionDiv.classList.add("subsection-wrapper");
-      subsectionDiv.classList.add(
-        subsections.align === "column" ? "column" : "row"
-      );
-      subsections.sections.forEach((subsectionData) =>
-        subsectionDiv.appendChild(renderSection(subsectionData, true))
-      );
-      sectionDiv.appendChild(subsectionDiv);
+      subsections.forEach((subsection) => {
+        const subsectionDiv = document.createElement("div");
+        subsectionDiv.classList.add("subsection-wrapper");
+        subsectionDiv.classList.add(
+          subsection.align === "column" ? "column" : "row"
+        );
+        subsection.sections.forEach((subsectionData) =>
+          subsectionDiv.appendChild(renderSection(subsectionData, true))
+        );
+        sectionDiv.appendChild(subsectionDiv);
+      });
     }
     return sectionDiv;
   };
 
-  const renderSlot = (slotData) => {
-    const { slot, sections } = slotData;
+  const renderCategory = (categoryData) => {
+    const { category, sections } = categoryData;
 
-    const slotDiv = document.createElement("div");
-    slotDiv.classList.add("slot");
-    const gearTitleEl = document.createElement("h1");
-    gearTitleEl.innerText = slot;
-    gearTitleEl.onclick = (e) => {
+    const categoryDiv = document.createElement("div");
+    categoryDiv.classList.add("category");
+    const categoryTitleEl = document.createElement("h1");
+    categoryTitleEl.innerText = category;
+    categoryTitleEl.onclick = (e) => {
       const arr = e.target.parentNode.getElementsByClassName("sections");
       if (arr && arr.length) {
         if (!arr[0].style.height) {
@@ -114,7 +147,7 @@
         }
       }
     };
-    slotDiv.appendChild(gearTitleEl);
+    categoryDiv.appendChild(categoryTitleEl);
     const sectionsDiv = document.createElement("div");
     sectionsDiv.classList.add("sections");
     const sectionRows = {};
@@ -128,8 +161,8 @@
       sectionRows[row].appendChild(renderSection(sectionData));
     });
     Object.values(sectionRows).forEach((div) => sectionsDiv.appendChild(div));
-    slotDiv.appendChild(sectionsDiv);
-    return slotDiv;
+    categoryDiv.appendChild(sectionsDiv);
+    return categoryDiv;
   };
 
   const renderTitle = (titleData) => {
@@ -177,7 +210,7 @@
   };
 
   const render = (el, data) => {
-    const { slots, tagline, ...titleData } = data;
+    const { categories, tagline, ...titleData } = data;
 
     el.appendChild(renderTitle(titleData));
     if (tagline) {
@@ -186,7 +219,9 @@
       taglineDiv.innerText = tagline;
       el.appendChild(taglineDiv);
     }
-    slots.forEach((slotData) => el.appendChild(renderSlot(slotData)));
+    categories.forEach((categoryData) =>
+      el.appendChild(renderCategory(categoryData))
+    );
     el.appendChild(renderCredits());
   };
 

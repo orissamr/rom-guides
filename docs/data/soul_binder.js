@@ -3,14 +3,14 @@ const DATA = {
   title_icon: "icon_18_5",
   title_class: "sb",
   tagline: 'This PVE build pumps "Esma" Ghost damage against Large MVPs.',
-  slots: [
+  categories: [
     {
-      slot: "Weapon",
+      category: "Weapon",
       sections: [
         {
           section: "",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Devourer of Souls",
               icon: "64201",
@@ -20,7 +20,7 @@ const DATA = {
         {
           section: "Cards",
           row: 2,
-          gears: [
+          entries: [
             {
               name: "Drake ★ Card",
               bold: true,
@@ -65,12 +65,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Off-Hand",
+      category: "Off-Hand",
       sections: [
         {
           section: "Main",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Othershore Web",
               bold: true,
@@ -92,7 +92,7 @@ const DATA = {
         {
           section: "Shadow",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Creeper Agreement",
               icon: "42586",
@@ -108,7 +108,7 @@ const DATA = {
         {
           section: "Cards",
           row: 2,
-          gears: [
+          entries: [
             {
               name: "Alice ★ Card",
               bold: true,
@@ -143,12 +143,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Armor",
+      category: "Armor",
       sections: [
         {
           section: "Main",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Soul Guide's Leather Shirt",
               bold: true,
@@ -171,7 +171,7 @@ const DATA = {
         {
           section: "Shadow",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Star Shatter's Gown",
               icon: "42090",
@@ -181,7 +181,7 @@ const DATA = {
         {
           section: "Cards",
           row: 2,
-          gears: [
+          entries: [
             {
               name: "Poi Tata ★ Card",
               bold: true,
@@ -242,12 +242,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Garment",
+      category: "Garment",
       sections: [
         {
           section: "Main",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Classic Robe",
               bold: true,
@@ -259,7 +259,7 @@ const DATA = {
         {
           section: "Shadow",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Divine Feather Clothes",
               icon: "43063",
@@ -269,7 +269,7 @@ const DATA = {
         {
           section: "Cards",
           row: 2,
-          gears: [
+          entries: [
             {
               name: "Zanubia Card",
               bold: true,
@@ -311,12 +311,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Shoes",
+      category: "Shoes",
       sections: [
         {
           section: "Main",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Orderly Ankle Boots",
               bold: true,
@@ -333,7 +333,7 @@ const DATA = {
         {
           section: "Shadow",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "White Gem Boots",
               icon: "43581",
@@ -347,7 +347,7 @@ const DATA = {
         {
           section: "Cards",
           row: 2,
-          gears: [
+          entries: [
             {
               name: "Marionette ★ Card",
               bold: true,
@@ -399,12 +399,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Accessories",
+      category: "Accessories",
       sections: [
         {
           section: "Main",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Floral Hair Clip",
               bold: true,
@@ -421,7 +421,7 @@ const DATA = {
         {
           section: "Shadow",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Tibbers' Hand",
               icon: "44049",
@@ -435,7 +435,7 @@ const DATA = {
         {
           section: "Cards",
           row: 2,
-          gears: [
+          entries: [
             {
               name: "Witch of Calamity Card",
               bold: true,
@@ -463,12 +463,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Headgear",
+      category: "Headgear",
       sections: [
         {
           section: "",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Music of Soul",
               bold: true,
@@ -525,7 +525,7 @@ const DATA = {
         {
           section: "Cards",
           row: 2,
-          gears: [
+          entries: [
             {
               name: "Soul Anthem ★ Card",
               bold: true,
@@ -563,12 +563,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Face",
+      category: "Face",
       sections: [
         {
           section: "",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Winter Crown",
               icon: "3002900",
@@ -600,12 +600,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Mouth",
+      category: "Mouth",
       sections: [
         {
           section: "",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Huge Bounty",
               icon: "3004862",
@@ -648,12 +648,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Back",
+      category: "Back",
       sections: [
         {
           section: "",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "+6 Encomiast's Movement",
               bold: true,
@@ -706,12 +706,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Tail",
+      category: "Tail",
       sections: [
         {
           section: "",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Beautiful Ensemble",
               icon: "3004620",
@@ -742,6 +742,208 @@ const DATA = {
               icon: "48130",
               stat: "Skill Dmg +0.5% per refine",
               note: "F2P",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      category: "Skills",
+      sections: [
+        {
+          section: "",
+          row: 1,
+          entries: [],
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "Damage/Debuff",
+                  entries: [
+                    {
+                      name: "Esma",
+                      type: "Attack",
+                      tags: ["3s CD"],
+                      icon_skill: "skill_2343001",
+                      stat: "High single-target damage; scales heavily on Luk, increased damage vs. Large",
+                      note: 'REQUIRES ACTIVATION from other "Es-" skills!!',
+                    },
+                    {
+                      name: "Estun",
+                      type: "Attack",
+                      tags: ["1.5s CD"],
+                      icon_skill: "skill_2323001",
+                      stat: "Low single-target damage",
+                      note: 'activates "Esma"',
+                    },
+                    {
+                      name: "Eska",
+                      type: "Attack",
+                      tags: ["3.5s CD"],
+                      icon_skill: "skill_2344001",
+                      stat: "Low AoE damage",
+                      note: 'activates "Esma"',
+                    },
+                    { br: true },
+                    {
+                      name: "Eske",
+                      type: "Debuff",
+                      tags: ["13s", "16s CD"],
+                      icon_skill: "skill_2322001",
+                      stat: "-20% Dmg/MDmg Reduc",
+                      note: 'activates "Esma"',
+                    },
+                    {
+                      name: "Unreal",
+                      type: "Debuff",
+                      tags: ["8s", "14s CD", "0.5s FCT"],
+                      icon_skill: "skill_2381001",
+                      stat: "-100% MDef",
+                    },
+                    {
+                      name: "Weight of Soul",
+                      type: "Passive",
+                      icon_skill: "skill_2325001",
+                      stat: "Apply size modifiers to MDmg",
+                      note: "can use Lv1",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              align: "row",
+              sections: [
+                {
+                  section: "Offensive Souls (Debuff)",
+                  entries: [
+                    {
+                      name: "Soul Hunter",
+                      type: "Passive",
+                      icon_skill: "skill_2330001",
+                      stat: "+30% Final Dmg against enemies with an Offensive Soul",
+                      note: "keep this active at all times!!",
+                    },
+                    {
+                      name: "Soul of the Priest",
+                      type: "Debuff",
+                      tags: ["10s", "22s CD"],
+                      icon_skill: "skill_2307001",
+                      stat: "Lex target (2x damage) every 2s",
+                    },
+                    {
+                      name: "Soul of the Summoner",
+                      type: "Debuff",
+                      tags: ["15s", "16s CD"],
+                      icon_skill: "skill_2308001",
+                      stat: "-20% Atk/MAtk",
+                      note: 'only used to activate "Soul Hunter", can use Lv1',
+                    },
+                  ],
+                },
+                {
+                  section: "Defensive Souls (Buff)",
+                  entries: [
+                    {
+                      name: "Kaizel",
+                      type: "Passive",
+                      icon_skill: "skill_2345001",
+                      stat: "Auto-revive players with a Defensive Soul",
+                    },
+                    {
+                      name: "Soul of the Sage",
+                      type: "Buff",
+                      tags: ["5~10s", "24s CD", "0.5s FCT"],
+                      icon_skill: "skill_2383001",
+                      stat: "Dodge ground skills, increase magic flee, constantly clear self-debuffs",
+                      note: 'self-buff, use as anti-fatal with "Kaizel"',
+                    },
+                    {
+                      name: "Soul of the Ninja",
+                      type: "Buff",
+                      tags: ["35s", "18s CD", "1s FCT"],
+                      icon_skill: "skill_2306001",
+                      stat: "+30% MPen, -100% FCT",
+                      note: "for magic classes",
+                    },
+                    {
+                      name: "Soul of the Blacksmith",
+                      type: "Buff",
+                      tags: ["150s", "18s CD"],
+                      icon_skill: "skill_2340001",
+                      stat: "+25% Atk",
+                      note: 'for physical classes, or cast it on anybody to activate "Kaizel"',
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              align: "row",
+              sections: [
+                {
+                  section: 'Buffs (in "Prepare for Elite")',
+                  entries: [
+                    {
+                      name: "Warm Wind",
+                      type: "Buff",
+                      tags: ["600s"],
+                      icon_skill: "skill_2302001",
+                      stat: "Element conversion",
+                      note: "always use Ghost element!!",
+                    },
+                    {
+                      name: "Spiritual Vision",
+                      type: "Buff",
+                      tags: ["21s", "42s CD", "0.5s FCT"],
+                      icon_skill: "skill_2341001",
+                      stat: "Treat all enemies as Ghost",
+                      note: "be careful about CD if adding to PFE",
+                    },
+                    {
+                      name: "Soul Gathering",
+                      type: "Buff",
+                      tags: ["35s", "120s CD", "30s CD", "1.4s FCT"],
+                      icon_skill: "skill_2304001",
+                      stat: "+30% Ghost Dmg, +20% MDmg, +50 Luk",
+                      note: "long FCT!!",
+                    },
+                    {
+                      name: "Soul Reaping Ceremony",
+                      tags: ["60s", "60s CD", "1s FCT"],
+                      type: "Buff",
+                      icon_skill: "skill_2324001",
+                      stat: "+10% Dmg to Large, +10% Race Dmg",
+                      note: "also buffs nearby teammates",
+                    },
+                  ],
+                },
+                {
+                  section: "Utility",
+                  entries: [
+                    {
+                      name: "Soul Walker",
+                      type: "Buff",
+                      tags: ["5s", "24s CD"],
+                      icon_skill: "skill_2312001",
+                      stat: '+50% Move Speed, immune to PDmg; drains all SP, triggering "Kaahi" healing',
+                    },
+                    {
+                      name: "Kaahi",
+                      type: "Passive",
+                      icon_skill: "skill_2310001",
+                      stat: "On SP loss, restore HP according to SP*30",
+                    },
+                    {
+                      name: "Kaina",
+                      type: "Passive",
+                      icon_skill: "skill_2311001",
+                      stat: 'Restore 10% HP/SP per second during "Play Dead"',
+                    },
+                  ],
+                },
+              ],
             },
           ],
         },

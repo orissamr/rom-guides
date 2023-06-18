@@ -3,14 +3,14 @@ const DATA = {
   title_icon: "icon_13_5",
   title_class: "bg",
   tagline: "This magic build maximizes Homunculus MAtk before casting \"Life Psychic\" and swapping to a different gear set.",
-  slots: [
+  categories: [
     {
-      slot: "Weapon",
+      category: "Weapon",
       sections: [
         {
           section: "Gears",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "+10 War Axe of Destruction",
               icon: "41871",
@@ -27,7 +27,7 @@ const DATA = {
         {
           section: "Cards",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Familiar Card",
               icon_card: "20007",
@@ -38,12 +38,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Off-Hand",
+      category: "Off-Hand",
       sections: [
         {
           section: "Gears",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "+15 Mysterious Transcript",
               bold: true,
@@ -66,7 +66,7 @@ const DATA = {
         {
           section: "Cards",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Celebration Night Card",
               icon: "23194",
@@ -77,12 +77,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Armor",
+      category: "Armor",
       sections: [
         {
           section: "Gears",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "+15 Soul Guide's Leather Shirt",
               bold: true,
@@ -100,7 +100,7 @@ const DATA = {
         {
           section: "Cards",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Dark Swordsman Card",
               bold: true,
@@ -118,12 +118,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Garment",
+      category: "Garment",
       sections: [
         {
           section: "Gears",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "+12 Divine Feather Clothes",
               icon: "43063",
@@ -134,7 +134,7 @@ const DATA = {
         {
           section: "Cards",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Harpy ★ Card",
               icon_card: "24099",
@@ -145,12 +145,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Shoes",
+      category: "Shoes",
       sections: [
         {
           section: "Gears",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "+15 White Gem Boots",
               icon: "43581",
@@ -171,7 +171,7 @@ const DATA = {
         {
           section: "Cards",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Familiar ★ Card",
               icon_card: "24071",
@@ -182,12 +182,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Accessories",
+      category: "Accessories",
       sections: [
         {
           section: "Gears",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "+15 Floral Hair Clip",
               icon: "44109",
@@ -199,7 +199,7 @@ const DATA = {
         {
           section: "Cards",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Zipper Bear ★ Card",
               icon: "24042",
@@ -210,12 +210,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Headgear",
+      category: "Headgear",
       sections: [
         {
           section: "Gears",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "A Date With Blue Velvet",
               bold: true,
@@ -240,7 +240,7 @@ const DATA = {
         {
           section: "Cards",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Whitebait Lake Lord Card",
               bold: true,
@@ -257,12 +257,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Face",
+      category: "Face",
       sections: [
         {
           section: "",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Sticky Note Nyaa",
               bold: true,
@@ -282,12 +282,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Mouth",
+      category: "Mouth",
       sections: [
         {
           section: "",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Honey Jar Elf",
               bold: true,
@@ -319,12 +319,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Back",
+      category: "Back",
       sections: [
         {
           section: "",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Whose cheese is that",
               bold: true,
@@ -350,12 +350,12 @@ const DATA = {
       ],
     },
     {
-      slot: "Tail",
+      category: "Tail",
       sections: [
         {
           section: "",
           row: 1,
-          gears: [
+          entries: [
             {
               name: "Happy Bird",
               bold: true,
