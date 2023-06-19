@@ -175,6 +175,12 @@ const DATA = {
             {
               name: "Star Shatter's Gown",
               icon: "42090",
+              note: "for MAtk%/MPen%",
+            },
+            {
+              name: "The Chosen's Gown",
+              icon: "42089",
+              note: "for Dmg to Large",
             },
           ],
         },
