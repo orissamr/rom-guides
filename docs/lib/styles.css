@@ -77,10 +77,6 @@ h3 {
     rgb(248, 0, 255) 100%
   );
 }
-.title::after {
-  flex: 1;
-  content: "";
-}
 .title .back-arrow {
   flex: 1;
   display: flex;
@@ -96,12 +92,23 @@ h3 {
 .title .back-arrow a:hover {
   opacity: 1;
 }
-.title img {
+.title .title-icon {
   height: 48px;
 }
 .title span {
   font-size: 2.3em;
   font-weight: 600;
+}
+.title .video-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.title .video-wrapper a {
+  display: flex;
+}
+.title .video-wrapper img {
+  height: 18px;
 }
 .tagline {
   padding: 16px 0;

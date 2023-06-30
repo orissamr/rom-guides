@@ -2,6 +2,7 @@ const DATA = {
   title: "Arcane Master (Auto-Attack)",
   title_icon: "icon_2_5",
   title_class: "am",
+  video: "https://www.youtube.com/watch?v=5DkhbTR3KXw",
   tagline:
     "This Auto-Attack build optimizes for Wind burst damage while maintaining survivability.",
   categories: [

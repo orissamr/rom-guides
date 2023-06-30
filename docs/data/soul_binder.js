@@ -2,6 +2,7 @@ const DATA = {
   title: "DPS Soul Binder",
   title_icon: "icon_18_5",
   title_class: "sb",
+  video: "https://www.youtube.com/watch?v=E-9UP1so1bY",
   tagline: 'This PVE build pumps "Esma" Ghost damage against Large MVPs.',
   categories: [
     {

@@ -2,6 +2,7 @@ const DATA = {
   title: "Magic Begetter (Gear Swap)",
   title_icon: "icon_13_5",
   title_class: "bg",
+  video: "https://www.youtube.com/watch?v=sxeWmFBCusI",
   tagline: "This magic build maximizes Homunculus MAtk before casting \"Life Psychic\" and swapping to a different gear set.",
   categories: [
     {

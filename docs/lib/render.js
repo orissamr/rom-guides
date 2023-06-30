@@ -54,7 +54,8 @@
           leftDiv.appendChild(iconImg);
         }
       }
-      const iconSrc = icon || icon_card || icon_skill || icon_rune1 || icon_rune2;
+      const iconSrc =
+        icon || icon_card || icon_skill || icon_rune1 || icon_rune2;
       if (iconSrc) {
         const iconImg = document.createElement("img");
         iconImg.src = getImgPath(iconSrc);
@@ -205,29 +206,46 @@
   };
 
   const renderTitle = (titleData) => {
-    const { title, title_icon, title_class } = titleData;
+    const { title, title_icon, title_class, video } = titleData;
 
     const div = document.createElement("div");
     div.classList.add("title");
     if (title_class) {
       div.classList.add(title_class);
     }
-    const backDiv = document.createElement("div");
-    backDiv.classList.add("back-arrow");
-    const backAnchor = document.createElement("a");
-    backAnchor.href = "./index.html";
-    backAnchor.textContent = "\u2039";
-    backDiv.appendChild(backAnchor);
-    div.appendChild(backDiv);
+    {
+      const backDiv = document.createElement("div");
+      backDiv.classList.add("back-arrow");
+      const backAnchor = document.createElement("a");
+      backAnchor.href = "./index.html";
+      backAnchor.textContent = "\u2039";
+      backDiv.appendChild(backAnchor);
+      div.appendChild(backDiv);
+    }
     if (title_icon) {
       const titleIcon = document.createElement("img");
       titleIcon.src = getImgPath(title_icon);
+      titleIcon.classList.add("title-icon");
       div.appendChild(titleIcon);
     }
     if (title) {
       const titleEl = document.createElement("span");
       titleEl.innerText = title;
       div.appendChild(titleEl);
+    }
+    {
+      const videoDiv = document.createElement("div");
+      videoDiv.classList.add("video-wrapper");
+      if (video) {
+        const anchor = document.createElement("a");
+        anchor.href = video;
+        anchor.target = "_blank";
+        const videoIcon = document.createElement("img");
+        videoIcon.src = "./img/yt_icon_mono_dark.png";
+        anchor.appendChild(videoIcon);
+        videoDiv.appendChild(anchor);
+      }
+      div.appendChild(videoDiv);
     }
     return div;
   };
@@ -242,7 +260,7 @@
     creditsText.innerText = "Created by Orissamr";
     anchor.appendChild(creditsText);
     const creditsImg = document.createElement("img");
-    creditsImg.src = `./img/logo.png`;
+    creditsImg.src = "./img/logo.png";
     anchor.appendChild(creditsImg);
     div.appendChild(anchor);
     return div;
