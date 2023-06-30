@@ -178,7 +178,7 @@ const DATA = {
               note: "for MAtk%/MPen%",
             },
             {
-              name: "The Chosen's Gown",
+              name: "+15 The Chosen's Gown",
               icon: "42089",
               note: "for Dmg to Large",
             },
