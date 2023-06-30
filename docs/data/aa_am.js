@@ -1114,5 +1114,98 @@ const DATA = {
         },
       ],
     },
+    {
+      category: "Runes",
+      sections: [
+        {
+          section: "",
+          row: 1,
+          entries: [],
+          subsections: [
+            {
+              align: "row",
+              sections: [
+                {
+                  section: "Damage",
+                  entries: [
+                    {
+                      name: "Thunder Lightning",
+                      type: "S",
+                      tags: ["Atk", "Atk", "Buff"],
+                      icon_rune1: "item_361010",
+                      stat: '#1: "Chain Lightning" Dmg +1~30%.\n#2: AA procs at 1~15% chance.\n#3: Always deal max jump damage.\n',
+                      note: "REQUIRED; 2nd line most important; 3rd line guaranteed",
+                    },
+                    {
+                      name: "Soul Vortex",
+                      type: "S",
+                      tags: ["Atk", "Atk", "Buff"],
+                      icon_rune1: "item_361010",
+                      stat: '#1: "Tetra Vortex" Dmg +1~30% to Non-Fire/Water/Wind/Earth targets.\n#2: CC ignores immunity.\n#3: AA procs every 5sec.\n',
+                      note: "2nd line important for PVP; 3rd line guaranteed",
+                    },
+                    {
+                      name: "Heart Vortex",
+                      type: "Star",
+                      tags: ["Atk", "Atk", "Buff"],
+                      icon_rune1: "item_361010",
+                      stat: '#2: "Tetra Vortex" Ghost Dmg +1~50%.\n#3: "Tetra Vortex" deals full damage to targets inside "White Imprison".\n',
+                      note: "3rd line important for PVP",
+                    },
+                    {
+                      name: "Glory Element",
+                      light: true,
+                      type: "B",
+                      tags: ["Atk", "Buff", "Any"],
+                      icon_rune1: "item_361210",
+                      stat: '#1: AA Dmg +5% per orb\n',
+                      note: "better than nothing",
+                    },
+                  ],
+                },
+                {
+                  section: "Utility",
+                  entries: [
+                    {
+                      name: "Cretaceous Barrier",
+                      type: "S",
+                      tags: ["Def", "Def", "Buff"],
+                      icon_rune1: "item_361010",
+                      stat: '#1: "White Barrier" Move Speed +10~30%.\n#2: Restore 1~5% SP per second.\n#3: Remove all cast time.\n',
+                      note: "3rd line most important for general utility",
+                    },
+                    {
+                      name: "Nether Prison",
+                      type: "S",
+                      tags: ["Atk", "Def", "Buff"],
+                      icon_rune1: "item_361010",
+                      stat: '#1: "White Imprison" success rate +10~30%.\n#3: Convert target to Ghost element.\n',
+                      note: '1st line important for PVP; 3rd line increases "Tetra Vortex" damage by 25~60%',
+                    },
+                    {
+                      name: "Frost Curse",
+                      type: "A",
+                      tags: ["Def", "Buff", "Any"],
+                      icon_rune1: "item_361110",
+                      stat: '#1: "Stasis" FCT -0.1~0.6sec.\n',
+                      note: "1st line important for quicker cast",
+                    },
+                    {
+                      name: "Flare Protection",
+                      light: true,
+                      type: "Star",
+                      tags: ["Atk", "Def", "Buff"],
+                      icon_rune1: "item_361010",
+                      stat: '#1: "Fire Pillar" Dmg +1~30%.\n#2: Dmg absorption +1~30%.\n#3: Absorb all damage types.\n',
+                      note: "2nd/3rd lines more important for PVE",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
