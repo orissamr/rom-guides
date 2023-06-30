@@ -1,5 +1,19 @@
 (function () {
   const getImgPath = (icon) => `./rom/${icon}.png`;
+  const getRuneImg = (type) => {
+    switch (type) {
+      case "B":
+        return "rune-levelb";
+      case "A":
+        return "rune-levela";
+      case "S":
+        return "rune-levels";
+      case "Star":
+        return "rune-levelss";
+      default:
+        return null;
+    }
+  };
 
   const renderEntry = (entryData) => {
     const {
@@ -11,6 +25,8 @@
       icon,
       icon_card,
       icon_skill,
+      icon_rune1,
+      icon_rune2,
       stat,
       ae_attr,
       note,
@@ -21,16 +37,33 @@
     {
       const leftDiv = document.createElement("div");
       leftDiv.classList.add("left");
-      if (icon_skill) {
-        leftDiv.classList.add("skill");
-      }
       if (icon_card) {
         leftDiv.classList.add("card");
       }
-      const iconSrc = icon || icon_card || icon_skill;
+      if (icon_skill) {
+        leftDiv.classList.add("skill");
+      }
+      if (icon_rune1 || icon_rune2) {
+        leftDiv.classList.add("rune");
+      }
+      if ((icon_rune1 || icon_rune2) && type) {
+        const iconBgSrc = getRuneImg(type);
+        if (iconBgSrc) {
+          const iconImg = document.createElement("img");
+          iconImg.src = getImgPath(iconBgSrc);
+          leftDiv.appendChild(iconImg);
+        }
+      }
+      const iconSrc = icon || icon_card || icon_skill || icon_rune1 || icon_rune2;
       if (iconSrc) {
         const iconImg = document.createElement("img");
         iconImg.src = getImgPath(iconSrc);
+        if (icon_rune1) {
+          iconImg.classList.add("rune-fg1");
+        }
+        if (icon_rune2) {
+          iconImg.classList.add("rune-fg2");
+        }
         leftDiv.appendChild(iconImg);
       }
       outerDiv.appendChild(leftDiv);
@@ -50,7 +83,7 @@
       nameDiv.appendChild(nameSpan);
       const chips = [[type, true]];
       if (tags) {
-        tags.forEach(chipText => chips.push([chipText, false]));
+        tags.forEach((chipText) => chips.push([chipText, false]));
       }
       chips
         .filter(([chipText, _]) => !!chipText)

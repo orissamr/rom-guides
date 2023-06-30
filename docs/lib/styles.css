@@ -182,7 +182,8 @@ h3 {
   min-height: 48px;
   border-radius: 6px;
 }
-.entry > .left.skill {
+.entry > .left.skill,
+.entry > .left.rune {
   border: none;
 }
 .entry > .left > img {
@@ -192,10 +193,21 @@ h3 {
 .entry > .left.card > img {
   max-height: initial;
 }
-.entry > .left.skill > img {
+.entry > .left.skill > img,
+.entry > .left.rune > img {
   max-width: 48px;
   max-height: 48px;
   padding-right: 2px;
+}
+.entry > .left.rune > img.rune-fg1 {
+  position: absolute;
+  max-width: 32px;
+  max-height: 32px;
+}
+.entry > .left.rune > img.rune-fg2 {
+  position: absolute;
+  max-width: 40px;
+  max-height: 40px;
 }
 .entry > .right > .entry-name {
   display: flex;
