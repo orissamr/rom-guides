@@ -213,12 +213,16 @@ h3 {
   border: 1px solid #b2bac2;
   border-radius: 16px;
 }
+.entry > .right > .entry-name > .chip.main {
+  font-weight: 500;
+}
 .entry > .right > .secondary {
   font-size: 0.85em;
   line-height: 1.1;
 }
 .entry > .right > .secondary > .stat {
   color: #1c1cff;
+  white-space: pre-wrap;
 }
 .entry > .right > .secondary > .ae {
   font-style: italic;

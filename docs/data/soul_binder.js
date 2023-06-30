@@ -955,5 +955,72 @@ const DATA = {
         },
       ],
     },
+    {
+      category: "Runes",
+      sections: [
+        {
+          section: "",
+          row: 1,
+          entries: [],
+          subsections: [
+            {
+              align: "row",
+              sections: [
+                {
+                  section: "Damage",
+                  entries: [
+                    {
+                      name: "All-Purpose Es",
+                      type: "Star",
+                      tags: ["Atk", "Def", "Buff"],
+                      icon_skill: "item_377010",
+                      stat: '#1: "Esma" Dmg to Large +1~30%.\n#3: "Esma" Final Dmg +66%.\n',
+                      note: "REQUIRED; 3rd line needed",
+                    },
+                    {
+                      name: "Intangible",
+                      type: "S",
+                      tags: ["Atk", "Def", "Buff"],
+                      icon_skill: "item_377010",
+                      stat: "#1: All Size Dmg +1~10%.\n#3: Ignore Size Reduc.\n",
+                      note: "1st line most important",
+                    },
+                  ],
+                },
+                {
+                  section: "Utility",
+                  entries: [
+                    {
+                      name: "Adversary of Magic",
+                      type: "S",
+                      tags: ["Buff", "Buff", "Buff"],
+                      icon_skill: "item_377010",
+                      stat: '#1: "Soul of the Sage" duration 5~10sec.\n#3: Constantly dispel debuffs.\n',
+                      note: "1st line important for longer uptime",
+                    },
+                    {
+                      name: "Underworld Roamer",
+                      type: "S",
+                      tags: ["Def", "Def", "Def"],
+                      icon_skill: "item_377010",
+                      stat: '#1: "Soul Walker" Move Speed +1~30%.\n#3: SP is fully restored.\n',
+                      note: "3rd line needed; carving recommended",
+                    },
+                    {
+                      name: "Soulhunting Night",
+                      type: "A",
+                      tags: ["Buff", "Buff", "Any"],
+                      icon_skill: "item_377110",
+                      stat: '#1: "Soul Reaping Ceremony" FCT -0.1~0.5sec.\n#2: Duration +1~20sec.\n',
+                      note: "2nd line important for longer uptime",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
   ],
 };

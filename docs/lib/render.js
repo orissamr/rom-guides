@@ -48,12 +48,18 @@
       }
       nameSpan.innerText = name;
       nameDiv.appendChild(nameSpan);
-      const chips = [type, ...(tags || [])];
+      const chips = [[type, true]];
+      if (tags) {
+        tags.forEach(chipText => chips.push([chipText, false]));
+      }
       chips
-        .filter((chipText) => !!chipText)
-        .forEach((chipText) => {
+        .filter(([chipText, _]) => !!chipText)
+        .forEach(([chipText, isType]) => {
           const typeSpan = document.createElement("span");
           typeSpan.classList.add("chip");
+          if (isType) {
+            typeSpan.classList.add("main");
+          }
           typeSpan.innerText = chipText;
           nameDiv.appendChild(typeSpan);
         });
