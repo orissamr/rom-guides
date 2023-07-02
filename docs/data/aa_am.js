@@ -940,6 +940,12 @@ const DATA = {
                   section: "PVE",
                   entries: [
                     {
+                      name: "+6 Ocean's Attachment",
+                      icon: "3007240",
+                      stat: "13% Dmg to MVP, 5% Move Speed",
+                      note: "Jul 2023 Blue Gacha",
+                    },
+                    {
                       name: "Huge Bounty",
                       icon: "3004862",
                       stat: "10% Dmg to MVP",
