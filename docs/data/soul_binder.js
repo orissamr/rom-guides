@@ -545,6 +545,11 @@ const DATA = {
               stat: "15% Ghost Dmg",
             },
             {
+              name: "Machine Dragon Wing Card",
+              icon_card: "23220",
+              stat: "15% Dmg to MVP",
+            },
+            {
               name: "Walter Card",
               icon_card: "23067",
               stat: "5% Skill Dmg, 5% Final Dmg to >50% HP targets (all targets w/ depo)",
@@ -588,12 +593,18 @@ const DATA = {
               stat: "8% Skill Dmg",
               note: "F2P",
             },
-            { br: true },
             {
               name: "+6 Cute Blower",
               icon: "3006940",
               stat: "15% Dmg to MVP",
               note: "Dec 2022 Blue Gacha",
+            },
+            { br: true },
+            {
+              name: "+6 Tales from the Sea",
+              icon: "3005990",
+              stat: "10% MPen",
+              note: "Jun 2022 Blue Gacha",
             },
             {
               name: "+X Monocle",

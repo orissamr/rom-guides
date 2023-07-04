@@ -663,6 +663,12 @@ const DATA = {
                       stat: "25% Stun/Freeze chance and duration",
                       note: 'for "Chain Lightning"',
                     },
+                    {
+                      name: "Smokie Card",
+                      icon_card: "22001",
+                      stat: 'Learn "Hiding"',
+                      note: "only useful with Moonlight Flower ★ Card",
+                    },
                   ],
                 },
                 {
@@ -821,6 +827,11 @@ const DATA = {
                   section: "PVE",
                   entries: [
                     {
+                      name: "Machine Dragon Wing Card",
+                      icon_card: "23220",
+                      stat: "15% Dmg to MVP",
+                    },
+                    {
                       name: "Norman Card",
                       icon_card: "23155",
                       stat: "5% Dmg to MVP",
@@ -852,12 +863,18 @@ const DATA = {
               stat: "8% Skill Dmg",
               note: "F2P",
             },
-            { br: true },
             {
               name: "+X Epic Spirit-Lightning",
               icon: "48598",
               stat: "10% Wind Dmg +1% per refine",
               note: "F2P",
+            },
+            { br: true },
+            {
+              name: "+6 Tales from the Sea",
+              icon: "3005990",
+              stat: "10% MPen",
+              note: "Jun 2022 Blue Gacha",
             },
             {
               name: "+X Monocle",
@@ -984,7 +1001,7 @@ const DATA = {
               name: "Starlight Sweety",
               icon: "3000321",
               stat: "5% All Race Dmg, Sleep proc",
-              note: "F2P",
+              note: "Aug 2019 Blue Gacha",
             },
             {
               name: "Rathgricy - Fallen Feather",
