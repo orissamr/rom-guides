@@ -386,12 +386,12 @@ const DATA = {
           entries: [
             {
               name: "DPS",
-              stat: "159 Int, 159 Vit, 120 Luk",
+              stat: "159 Int, 159 Vit, 103 Luk",
             },
             { br: true },
             {
               name: "Str Swap (Dark Swordsman Card)",
-              stat: "159 Int, 159 Str, 120 Vit",
+              stat: "159 Int, 159 Str, 103 Vit",
             },
           ],
         },

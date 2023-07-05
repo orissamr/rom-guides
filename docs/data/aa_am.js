@@ -1189,7 +1189,7 @@ const DATA = {
             { br: true },
             {
               name: "No Spell Crit",
-              stat: "159 Int, 159 Agi, 120 Vit",
+              stat: "159 Int, 159 Agi, 103 Vit",
             },
           ],
         },
