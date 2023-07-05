@@ -900,6 +900,22 @@ const DATA = {
                   ],
                 },
                 {
+                  section: "GVG",
+                  entries: [
+                    {
+                      name: "Aviation Goggle - Seasonal",
+                      bold: true,
+                      icon: "48780",
+                      stat: "30% AA/skill range increase",
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              align: "row",
+              sections: [
+                {
                   section: "PVE",
                   entries: [
                     {
@@ -953,6 +969,16 @@ const DATA = {
             {
               align: "column",
               sections: [
+                {
+                  section: "GVG",
+                  entries: [
+                    {
+                      name: "Voice of Ocean - Seasonal",
+                      icon: "48783",
+                      stat: "AA procs \"Endure\", 10% chance to reduce damage taken by 99% for 2sec",
+                    },
+                  ],
+                },
                 {
                   section: "PVE",
                   entries: [
@@ -1115,6 +1141,16 @@ const DATA = {
               align: "column",
               sections: [
                 {
+                  section: "GVG",
+                  entries: [
+                    {
+                      name: "Perched Whelpling - Seasonal",
+                      icon: "48134",
+                      stat: "Dodge ground skills for 5sec every 10sec, 10% Skill Dmg Reduc, 10% MDmg Reduc",
+                    },
+                  ],
+                },
+                {
                   section: "PVE",
                   entries: [
                     {
@@ -1203,7 +1239,7 @@ const DATA = {
                       type: "B",
                       tags: ["Atk", "Buff", "Any"],
                       icon_rune1: "item_361210",
-                      stat: '#1: AA Dmg +5% per orb\n',
+                      stat: "#1: AA Dmg +5% per orb\n",
                       note: "better than nothing",
                     },
                   ],
