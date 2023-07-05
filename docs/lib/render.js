@@ -67,7 +67,9 @@
         }
         leftDiv.appendChild(iconImg);
       }
-      outerDiv.appendChild(leftDiv);
+      if (iconSrc !== undefined) {
+        outerDiv.appendChild(leftDiv);
+      }
     }
     {
       const rightDiv = document.createElement("div");

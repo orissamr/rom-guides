@@ -772,6 +772,21 @@ const DATA = {
       ],
     },
     {
+      category: "Stats",
+      sections: [
+        {
+          section: "",
+          row: 1,
+          entries: [
+            {
+              name: "DPS",
+              stat: "159 Luk, 159 Int, 120 Vit",
+            },
+          ],
+        },
+      ],
+    },
+    {
       category: "Skills",
       sections: [
         {

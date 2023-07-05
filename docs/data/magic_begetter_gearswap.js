@@ -3,7 +3,8 @@ const DATA = {
   title_icon: "icon_13_5",
   title_class: "bg",
   video: "https://www.youtube.com/watch?v=sxeWmFBCusI",
-  tagline: "This magic build maximizes Homunculus MAtk before casting \"Life Psychic\" and swapping to a different gear set.",
+  tagline:
+    'This magic build maximizes Homunculus MAtk before casting "Life Psychic" and swapping to a different gear set.',
   categories: [
     {
       category: "Weapon",
@@ -72,6 +73,7 @@ const DATA = {
               name: "Celebration Night Card",
               icon: "23194",
               stat: "5 Int, 50 MAtk",
+              note: "Newbie BCC Box",
             },
           ],
         },
@@ -370,6 +372,26 @@ const DATA = {
               icon: "48079",
               stat: "2% MAtk",
               note: "F2P",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      category: "Stats",
+      sections: [
+        {
+          section: "",
+          row: 1,
+          entries: [
+            {
+              name: "DPS",
+              stat: "159 Int, 159 Vit, 120 Luk",
+            },
+            { br: true },
+            {
+              name: "Str Swap (Dark Swordsman Card)",
+              stat: "159 Int, 159 Str, 120 Vit",
             },
           ],
         },

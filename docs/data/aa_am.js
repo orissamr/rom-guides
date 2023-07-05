@@ -1139,6 +1139,27 @@ const DATA = {
       ],
     },
     {
+      category: "Stats",
+      sections: [
+        {
+          section: "",
+          row: 1,
+          entries: [
+            {
+              name: "Spell Crit",
+              bold: true,
+              stat: "159 Int, 137 Agi, 136 Luk",
+            },
+            { br: true },
+            {
+              name: "No Spell Crit",
+              stat: "159 Int, 159 Agi, 120 Vit",
+            },
+          ],
+        },
+      ],
+    },
+    {
       category: "Runes",
       sections: [
         {
