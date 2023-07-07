@@ -162,6 +162,12 @@ const DATA = {
               icon: "42585",
               note: "for MPen%/MAtk%",
             },
+            {
+              name: "+15 Arcane Codex",
+              light: true,
+              icon: "42587",
+              note: 'for permanent "White Barrier"',
+            },
           ],
         },
         {
@@ -212,6 +218,13 @@ const DATA = {
                       icon_card: "24606",
                       stat: "20% Magic Reflect",
                     },
+                    {
+                      name: "Dead Time Holder Card",
+                      light: true,
+                      icon_card: "24516",
+                      stat: "15% Dmg to Demihuman, 15% Demihuman Reduc",
+                      note: "in your dreams",
+                    },
                   ],
                 },
                 {
@@ -261,6 +274,23 @@ const DATA = {
               name: "Magic Light Cocoon",
               icon: "42126",
               note: "Water converting w/ Mayfly Shoes",
+            },
+          ],
+          subsections: [
+            {
+              align: "row",
+              sections: [
+                {
+                  section: "PVP",
+                  entries: [
+                    {
+                      name: "The Chosen's Gown",
+                      icon: "42089",
+                      note: "Immune to Fear",
+                    },
+                  ],
+                },
+              ],
             },
           ],
         },
@@ -610,6 +640,10 @@ const DATA = {
               name: "Kraken's Eye",
               icon: "44051",
             },
+            {
+              name: "Time Manipulator",
+              icon: "44061",
+            },
           ],
         },
         {
@@ -743,6 +777,22 @@ const DATA = {
                   ],
                 },
                 {
+                  section: "GVG",
+                  entries: [
+                    {
+                      name: "Flutter Butterfly - Seasonal",
+                      icon: "49597",
+                      stat: "-10% Cast Delay, 30% Status Resist",
+                      note: 'for permanent "White Barrier"',
+                    },
+                  ],
+                },
+              ],
+            },
+            {
+              align: "row",
+              sections: [
+                {
                   section: "PVE",
                   entries: [
                     {
@@ -757,6 +807,7 @@ const DATA = {
                       stat: "15% Dmg to MVP",
                       note: "May 2021 Blue Gacha",
                     },
+                    { br: true },
                     {
                       name: "Poring Sleeping Hat",
                       icon: "3007221",
@@ -975,7 +1026,7 @@ const DATA = {
                     {
                       name: "Voice of Ocean - Seasonal",
                       icon: "48783",
-                      stat: "AA procs \"Endure\", 10% chance to reduce damage taken by 99% for 2sec",
+                      stat: 'AA procs "Endure", 10% chance to reduce damage taken by 99% for 2sec',
                     },
                   ],
                 },

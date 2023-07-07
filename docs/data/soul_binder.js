@@ -437,6 +437,10 @@ const DATA = {
               name: "Kraken's Eye",
               icon: "44051",
             },
+            {
+              name: "Time Manipulator",
+              icon: "44061",
+            },
           ],
         },
         {
