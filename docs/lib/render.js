@@ -131,6 +131,7 @@
       tableDiv.appendChild(tableTitleDiv);
       const tableImgPath = getTableImgPath(table_img);
       const tableImg = document.createElement("img");
+      tableImg.loading = "lazy";
       tableImg.src = tableImgPath;
       const tableImgAnchor = document.createElement("a");
       tableImgAnchor.classList.add("table");

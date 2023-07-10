@@ -6,45 +6,6 @@ const DATA = {
     "Collection of game resources. All credits to their respective owners~",
   categories: [
     {
-      category: "Elements",
-      sections: [
-        {
-          row: 1,
-          entries: [],
-          subsections: [
-            {
-              align: "column",
-              sections: [
-                {
-                  section: "",
-                  entries: [
-                    {
-                      table_title: "Elemental Coefficients (simple)",
-                      table_img: "element_table",
-                    },
-                    { br: true },
-                    {
-                      table_title: "Elemental Coefficients (detailed)",
-                      table_img: "element_table_4",
-                    },
-                  ],
-                },
-                {
-                  section: "",
-                  entries: [
-                    {
-                      table_title: "Mob Elements",
-                      table_img: "element_mobs",
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
-        },
-      ],
-    },
-    {
       category: "Status Effects",
       sections: [
         {
@@ -89,7 +50,7 @@ const DATA = {
       ],
     },
     {
-      category: "Stats",
+      category: "Target Stats",
       sections: [
         {
           row: 1,
@@ -112,6 +73,45 @@ const DATA = {
                     {
                       table_title: "Ponape Secret Realm",
                       table_img: "stats_psr",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      category: "Elements",
+      sections: [
+        {
+          row: 1,
+          entries: [],
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Elemental Coefficients (simple)",
+                      table_img: "element_table",
+                    },
+                    { br: true },
+                    {
+                      table_title: "Elemental Coefficients (detailed)",
+                      table_img: "element_table_4",
+                    },
+                  ],
+                },
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Mob Elements",
+                      table_img: "element_mobs",
                     },
                   ],
                 },
