@@ -1,5 +1,6 @@
 (function () {
   const getImgPath = (icon) => `./rom/${icon}.png`;
+  const getTableImgPath = (name) => `./tables/${name}.png`;
   const getRuneImg = (type) => {
     switch (type) {
       case "B":
@@ -30,6 +31,8 @@
       stat,
       ae_attr,
       note,
+      table_title,
+      table_img,
     } = entryData;
 
     const outerDiv = document.createElement("div");
@@ -71,7 +74,7 @@
         outerDiv.appendChild(leftDiv);
       }
     }
-    {
+    if (name || type || tags || stat || note) {
       const rightDiv = document.createElement("div");
       rightDiv.classList.add("right");
       const nameDiv = document.createElement("div");
@@ -119,6 +122,23 @@
       secondaryDiv.innerHTML = secondaryArr.join("\n");
       rightDiv.appendChild(secondaryDiv);
       outerDiv.appendChild(rightDiv);
+    }
+    if (table_title && table_img) {
+      const tableDiv = document.createElement("div");
+      tableDiv.classList.add("table-wrapper");
+      const tableTitleDiv = document.createElement("div");
+      tableTitleDiv.innerText = table_title;
+      tableDiv.appendChild(tableTitleDiv);
+      const tableImgPath = getTableImgPath(table_img);
+      const tableImg = document.createElement("img");
+      tableImg.src = tableImgPath;
+      const tableImgAnchor = document.createElement("a");
+      tableImgAnchor.classList.add("table");
+      tableImgAnchor.href = tableImgPath;
+      tableImgAnchor.target = "_blank";
+      tableImgAnchor.appendChild(tableImg);
+      tableDiv.appendChild(tableImgAnchor);
+      outerDiv.appendChild(tableDiv);
     }
     return outerDiv;
   };
