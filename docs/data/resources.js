@@ -6,7 +6,7 @@ const DATA = {
     "Collection of game resources. All credits to their respective owners~",
   categories: [
     {
-      category: "Basics",
+      category: "Elements",
       sections: [
         {
           row: 1,
@@ -19,8 +19,13 @@ const DATA = {
                   section: "",
                   entries: [
                     {
-                      table_title: "Elemental Coefficients",
+                      table_title: "Elemental Coefficients (simple)",
                       table_img: "element_table",
+                    },
+                    { br: true },
+                    {
+                      table_title: "Elemental Coefficients (detailed)",
+                      table_img: "element_table_4",
                     },
                   ],
                 },
@@ -28,13 +33,52 @@ const DATA = {
                   section: "",
                   entries: [
                     {
-                      table_title: "Status Effects",
+                      table_title: "Mob Elements",
+                      table_img: "element_mobs",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      category: "Status Effects",
+      sections: [
+        {
+          row: 1,
+          entries: [],
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Descriptions (simple)",
                       table_img: "status_effects",
                     },
                     { br: true },
                     {
-                      table_title: "Status Attributes",
+                      table_title: "Descriptions (detailed)",
+                      table_img: "status_effects_v2",
+                    },
+                  ],
+                },
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Status Attribute Points",
                       table_img: "status_stats",
+                    },
+                    { br: true },
+                    {
+                      table_title: "Status Resists",
+                      table_img: "status_resists",
                     },
                   ],
                 },
@@ -58,12 +102,16 @@ const DATA = {
                   section: "",
                   entries: [
                     {
-                      table_title: "Dummy Stats",
+                      table_title: "Home Dummy",
                       table_img: "stats_dummy",
                     },
                     {
-                      table_title: "Instance Stats",
+                      table_title: "Instances",
                       table_img: "stats_instance",
+                    },
+                    {
+                      table_title: "Ponape Secret Realm",
+                      table_img: "stats_psr",
                     },
                   ],
                 },
@@ -89,6 +137,11 @@ const DATA = {
                     {
                       table_title: "Refine Price Calculator",
                       table_img: "refine_cost",
+                    },
+                    { br: true },
+                    {
+                      table_title: "+6/+8 Headgear Deposit",
+                      table_img: "depo_hg_refine",
                     },
                   ],
                 },
@@ -126,10 +179,19 @@ const DATA = {
                   section: "",
                   entries: [
                     {
-                      table_title: "Extract List",
-                      table_img: "oracle_extract_items",
+                      table_title: "Offensive Extract List",
+                      table_img: "oracle_extract_atk",
                     },
                     { br: true },
+                    {
+                      table_title: "Defensive Extract List",
+                      table_img: "oracle_extract_def",
+                    },
+                  ],
+                },
+                {
+                  section: "",
+                  entries: [
                     {
                       table_title: "Extracted Refine Rates",
                       table_img: "oracle_extract_rates",
@@ -147,6 +209,59 @@ const DATA = {
                     {
                       table_title: "Limit Increase Cost",
                       table_img: "oracle_extract_increase",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      category: "PVP/GVG",
+      sections: [
+        {
+          row: 1,
+          entries: [],
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "6v6 Chess Rules",
+                      table_img: "6v6_chess",
+                    },
+                    { br: true },
+                    {
+                      table_title: "6v6 Orb Combinations",
+                      table_img: "6v6_orbs",
+                    },
+                  ],
+                },
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "12v12 Items",
+                      table_img: "12v12_items",
+                    },
+                    { br: true },
+                    {
+                      table_title: "12v12 Shop",
+                      table_img: "12v12_shop",
+                    },
+                  ],
+                },
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "WoE S2 Rules",
+                      table_img: "gvg_s2",
                     },
                   ],
                 },
