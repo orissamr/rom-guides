@@ -271,5 +271,49 @@ const DATA = {
         },
       ],
     },
+    {
+      category: "PVP Reductions",
+      sections: [
+        {
+          row: 1,
+          entries: [],
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "PVP Physical Reduc",
+                      table_img: "pvp_dr",
+                    },
+                    { br: true },
+                    {
+                      table_title: "PVP Magic Reduc",
+                      table_img: "pvp_mdr",
+                    },
+                  ],
+                },
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "PVP Elemental Reduc",
+                      table_img: "pvp_ele",
+                    },
+                    { br: true },
+                    {
+                      table_title: "PVP Race/Skill Reduc",
+                      table_img: "pvp_racial_skill",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
   ],
 };
