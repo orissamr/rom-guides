@@ -53,6 +53,7 @@
         const iconBgSrc = getRuneImg(type);
         if (iconBgSrc) {
           const iconImg = document.createElement("img");
+          iconImg.loading = "lazy";
           iconImg.src = getImgPath(iconBgSrc);
           leftDiv.appendChild(iconImg);
         }
@@ -61,6 +62,7 @@
         icon || icon_card || icon_skill || icon_rune1 || icon_rune2;
       if (iconSrc) {
         const iconImg = document.createElement("img");
+        iconImg.loading = "lazy";
         iconImg.src = getImgPath(iconSrc);
         if (icon_rune1) {
           iconImg.classList.add("rune-fg1");
