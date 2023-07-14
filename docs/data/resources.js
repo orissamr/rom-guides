@@ -166,6 +166,122 @@ const DATA = {
       ],
     },
     {
+      category: "Relics",
+      sections: [
+        {
+          row: 1,
+          entries: [],
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "UARS Rates",
+                      table_img: "relic_uars_odds_icon",
+                    },
+                    { br: true },
+                    {
+                      table_title: "UARS Rates (KR)",
+                      table_img: "relic_uars_odds",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      category: "Enchants",
+      sections: [
+        {
+          row: 1,
+          entries: [],
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Equipment (part 1)",
+                      table_img: "enchant_odds_eq1",
+                    },
+                    { br: true },
+                    {
+                      table_title: "Equipment (part 2)",
+                      table_img: "enchant_odds_eq2",
+                    },
+                  ],
+                },
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Equipment Stats",
+                      table_img: "enchant_odds_eq_stats",
+                    },
+                    { br: true },
+                    {
+                      table_title: "Equipment Resists",
+                      table_img: "enchant_odds_eq_resists",
+                    },
+                  ],
+                },
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Equipment Attributes",
+                      table_img: "enchant_odds_eq_attr",
+                    },
+                    { br: true },
+                    {
+                      table_title: "Equipment 4th Lines",
+                      table_img: "enchant_odds_eq_word",
+                    },
+                  ],
+                },
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Headgear",
+                      table_img: "enchant_odds_hg",
+                    },
+                    { br: true },
+                    {
+                      table_title: "Headgear Stats",
+                      table_img: "enchant_odds_hg_stats",
+                    },
+                  ],
+                },
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Headgear Attributes",
+                      table_img: "enchant_odds_hg_attr",
+                    },
+                    { br: true },
+                    {
+                      table_title: "Headgear 4th Lines",
+                      table_img: "enchant_odds_hg_word",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
       category: "Oracle Mirror",
       sections: [
         {
