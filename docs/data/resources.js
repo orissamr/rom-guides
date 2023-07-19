@@ -71,6 +71,10 @@ const DATA = {
                       table_img: "stats_instance",
                     },
                     {
+                      table_title: "Oracle Dungeon",
+                      table_img: "stats_oracle",
+                    },
+                    {
                       table_title: "Ponape Secret Realm",
                       table_img: "stats_psr",
                     },
