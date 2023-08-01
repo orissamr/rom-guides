@@ -193,6 +193,15 @@ const DATA = {
                     },
                   ],
                 },
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Remold Activation (example)",
+                      table_img: "relic_remold",
+                    },
+                  ],
+                },
               ],
             },
           ],
