@@ -205,6 +205,7 @@ h3 {
 .entry > .left.skill,
 .entry > .left.rune {
   border: none;
+  position: relative;
 }
 .entry > .left > img {
   max-width: 40px;
