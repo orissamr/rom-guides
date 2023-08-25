@@ -81,6 +81,15 @@ h3 {
     rgb(248, 0, 255) 100%
   );
 }
+.title.genos {
+  background: rgb(16, 58, 123);
+  background: linear-gradient(
+    90deg,
+    rgb(16, 58, 123) 0%,
+    rgb(47, 90, 159) 35%,
+    rgb(132, 155, 191) 100%
+  );
+}
 .title .back-arrow {
   flex: 1;
   display: flex;
