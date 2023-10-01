@@ -163,6 +163,15 @@ const DATA = {
                     },
                   ],
                 },
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Shadow Equipment Upgrades",
+                      table_img: "shadow_eq_upgrade",
+                    },
+                  ],
+                },
               ],
             },
           ],
