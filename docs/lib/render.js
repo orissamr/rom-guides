@@ -1,6 +1,6 @@
 (function () {
   const getImgPath = (icon) => `./rom/${icon}.png`;
-  const getTableImgPath = (name) => `./tables/${name}.png`;
+  const getTableImgPath = (name, fmt) => `./tables/${name}.${fmt || "png"}`;
   const getRuneImg = (type) => {
     switch (type) {
       case "B":
@@ -33,6 +33,7 @@
       note,
       table_title,
       table_img,
+      table_img_format,
     } = entryData;
 
     const outerDiv = document.createElement("div");
@@ -131,7 +132,7 @@
       const tableTitleDiv = document.createElement("div");
       tableTitleDiv.innerText = table_title;
       tableDiv.appendChild(tableTitleDiv);
-      const tableImgPath = getTableImgPath(table_img);
+      const tableImgPath = getTableImgPath(table_img, table_img_format);
       const tableImg = document.createElement("img");
       tableImg.loading = "lazy";
       tableImg.src = tableImgPath;

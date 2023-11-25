@@ -78,6 +78,10 @@ const DATA = {
                       table_title: "Ponape Secret Realm",
                       table_img: "stats_psr",
                     },
+                    {
+                      table_title: "White Star Airship",
+                      table_img: "stats_psr_airship",
+                    },
                   ],
                 },
               ],
@@ -357,6 +361,123 @@ const DATA = {
       ],
     },
     {
+      category: "Arcane Runes",
+      sections: [
+        {
+          row: 1,
+          entries: [],
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Rune List",
+                      table_img: "arcane_runes",
+                    },
+                    { br: true },
+                    {
+                      table_title: "Rune Upgrades",
+                      table_img: "arcane_rune_upgrade",
+                    },
+                  ],
+                },
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "White Star Airship Rewards",
+                      table_img: "arcane_rune_airship_rewards",
+                    },
+                    { br: true },
+                    {
+                      table_title: "White Star Airship Scoring",
+                      table_img: "arcane_rune_airship_score",
+                      table_img_format: "jpg",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      category: "Maps",
+      sections: [
+        {
+          row: 1,
+          entries: [],
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Labyrinth Forest",
+                      table_img: "map_labyrinth",
+                    },
+                  ],
+                },
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Tears of the Ancient City (Mobs)",
+                      table_img: "map_tears_mobs",
+                      table_img_format: "webp",
+                    },
+                    { br: true },
+                    {
+                      table_title: "Tears of the Ancient City (MVPs)",
+                      table_img: "map_tears_mvps",
+                      table_img_format: "jpg",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
+      category: "Jobs",
+      sections: [
+        {
+          row: 1,
+          entries: [],
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Job Vouchers",
+                      table_img: "job_vouchers",
+                    },
+                    { br: true },
+                    {
+                      table_title: "Shadow Equipment List",
+                      table_img: "shadow_eq_summary",
+                      table_img_format: "jpg",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
       category: "PVP/GVG",
       sections: [
         {
@@ -400,6 +521,11 @@ const DATA = {
                     {
                       table_title: "WoE S2 Rules",
                       table_img: "gvg_s2",
+                    },
+                    { br: true },
+                    {
+                      table_title: "Kafra Premium - Global [Oct 16, 2023]",
+                      table_img: "kafra_premium_231016",
                     },
                   ],
                 },
