@@ -440,6 +440,20 @@ const DATA = {
                     },
                   ],
                 },
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Tears of the Ancient City (Zone 1)",
+                      table_img: "map_tears_full_1",
+                    },
+                    { br: true },
+                    {
+                      table_title: "Tears of the Ancient City (Zone 2)",
+                      table_img: "map_tears_full_2",
+                    },
+                  ],
+                },
               ],
             },
           ],
