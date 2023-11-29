@@ -456,6 +456,16 @@ const DATA = {
                     },
                   ],
                 },
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "ROM x Genshin Impact",
+                      table_img: "romXgenshin",
+                      table_img_format: "jpg",
+                    },
+                  ],
+                },
               ],
             },
           ],
