@@ -446,11 +446,13 @@ const DATA = {
                     {
                       table_title: "Tears of the Ancient City (Zone 1)",
                       table_img: "map_tears_full_1",
+                      table_img_format: "webp",
                     },
                     { br: true },
                     {
                       table_title: "Tears of the Ancient City (Zone 2)",
                       table_img: "map_tears_full_2",
+                      table_img_format: "webp",
                     },
                   ],
                 },
