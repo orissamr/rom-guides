@@ -272,6 +272,13 @@ const DATA = {
                       icon_card: "24601",
                       stat: "20% Final Dmg to Poisoned targets, 3% Poison proc on physical hit",
                     },
+                    {
+                      name: "Bloody Knight Undead Card",
+                      light: true,
+                      icon_card: "24517",
+                      stat: "15% Dmg to Demihuman +1% per Armor refine",
+                      note: "in your dreams",
+                    },
                   ],
                 },
                 {

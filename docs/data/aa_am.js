@@ -377,6 +377,13 @@ const DATA = {
                       stat: "Ghost armor",
                       note: "for survivability?",
                     },
+                    {
+                      name: "Bloody Knight Undead Card",
+                      light: true,
+                      icon_card: "24517",
+                      stat: "15% Dmg to Demihuman +1% per Armor refine",
+                      note: "in your dreams",
+                    },
                   ],
                 },
                 {
