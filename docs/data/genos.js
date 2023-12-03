@@ -28,11 +28,26 @@ const DATA = {
               stat: "17.5% Spell Crit, 5 Int/Luk",
             },
             {
+              name: "Hill Wind ★ Card",
+              icon_card: "24664",
+              stat: "15% Fire/Water/Wind/Earth Dmg (+5% w/ depo)",
+            },
+            {
+              name: "World Serpent Card",
+              icon_card: "23315",
+              stat: "5% Skill Dmg +0.5% per Weapon refine",
+            },
+            {
               name: "Incantation Samurai Card",
               icon_card: "23055",
               stat: "15% MPen",
             },
             { br: true },
+            {
+              name: "Corruption Root Card",
+              icon_card: "23070",
+              stat: "15% All Race Dmg",
+            },
             {
               name: "Phreeoni ★ Card",
               icon_card: "24611",
@@ -263,6 +278,12 @@ const DATA = {
                   section: "PVE",
                   entries: [
                     {
+                      name: "Molten Colossus Card",
+                      bold: true,
+                      icon_card: "23316",
+                      stat: "5% Dmg to MVP +1% per Armor refine (+5% w/ depo)",
+                    },
+                    {
                       name: "Poi Tata ★ Card",
                       bold: true,
                       icon_card: "24670",
@@ -361,6 +382,12 @@ const DATA = {
                   section: "PVE",
                   entries: [
                     {
+                      name: "Golden Flame King Card",
+                      bold: true,
+                      icon_card: "23302",
+                      stat: "15% Dmg to MVP",
+                    },
+                    {
                       name: "Mayfair Linse Card",
                       icon_card: "23154",
                       stat: "5% Dmg to MVP",
@@ -412,6 +439,20 @@ const DATA = {
           row: 2,
           entries: [
             {
+              name: "Swordsman Cenia MVP Card",
+              bold: true,
+              icon_card: "23298",
+              stat: "5% Skill Dmg +1% per Shoe refine, 10% Move Speed",
+              note: "BCC Box",
+            },
+            {
+              name: "Swordsman Cenia Card",
+              bold: true,
+              icon_card: "23297",
+              stat: "5% Skill Dmg +0.5% per Shoe refine, 5% Move Speed",
+              note: "BCC Box",
+            },
+            {
               name: "Dark Lord ★ Card",
               icon_card: "24642",
               stat: '20% "Meteor Storm" proc on hit, 25% abnormal status res',
@@ -427,13 +468,13 @@ const DATA = {
               icon_card: "20190",
               stat: "5 Str/Vit",
             },
+            { br: true },
             {
               name: "Familiar ★ Card",
               light: true,
               icon_card: "24071",
               stat: "3% MAtk",
             },
-            { br: true },
             {
               name: "Flute Player ★ Card",
               light: true,
@@ -542,6 +583,12 @@ const DATA = {
           row: 2,
           entries: [
             {
+              name: "Devil Governor Card",
+              bold: true,
+              icon_card: "23322",
+              stat: "5% Skill Dmg, 10% Final Dmg [unstackable] split on all targets (unsplit w/ depo)",
+            },
+            {
               name: "Witch of Calamity Card",
               bold: true,
               icon_card: "23064",
@@ -571,6 +618,12 @@ const DATA = {
                 {
                   section: "PVP",
                   entries: [
+                    {
+                      name: "Smokie ★ Card",
+                      icon_card: "24661",
+                      stat: 'Learn "Hiding", 10% Dmg/MDmg bonus after hiding, 5% Move Speed',
+                      note: "only useful with Moonlight Flower ★ Card",
+                    },
                     {
                       name: "Smokie Card",
                       icon_card: "22001",
@@ -701,16 +754,31 @@ const DATA = {
           ],
           subsections: [
             {
-              align: "row",
+              align: "column",
               sections: [
                 {
                   section: "PVP",
                   entries: [
                     {
+                      name: "High Wizard Katerina MVP Card",
+                      bold: true,
+                      icon_card: "23286",
+                      stat: "5% Final Dmg to Medium +1% per Headgear refine, 1% Ignore MDef per Headgear refine",
+                      note: "BCC Box",
+                    },
+                    {
+                      name: "High Wizard Katerina Card",
+                      bold: true,
+                      icon_card: "23285",
+                      stat: "2% Final Dmg to Medium +1% per Headgear refine",
+                      note: "BCC Box",
+                    },
+                    {
                       name: "Mentalist Card",
                       icon_card: "24621",
                       stat: "Immune to Fear",
                     },
+                    { br: true },
                     {
                       name: "Nightmare Card",
                       icon_card: "20065",
@@ -733,6 +801,7 @@ const DATA = {
                       icon_card: "23220",
                       stat: "15% Dmg to MVP",
                     },
+                    { br: true },
                     {
                       name: "Norman Card",
                       icon_card: "23155",
@@ -764,6 +833,12 @@ const DATA = {
               icon: "149199",
               stat: "8% Skill Dmg",
               note: "F2P",
+            },
+            {
+              name: "+6 Charm of Brownie",
+              icon: "3007291",
+              stat: "10% Magic AoE Dmg",
+              note: "Nov 2023 Blue Gacha",
             },
             {
               name: "+X Epic Spirit-Lightning",
