@@ -1052,6 +1052,12 @@ const DATA = {
               note: "Sep 2021 Blue Gacha",
             },
             {
+              name: "It's too late!",
+              icon: "3007260",
+              stat: "5% Move Speed, 1% Skill Dmg per 5% Move Speed above 100% (max 10%)",
+              note: "Sep 2023 Blue Gacha",
+            },
+            {
               name: "+6 Earl Daemon",
               icon: "3005192",
               stat: "4% Magic AoE Dmg, 4% Fire/Water/Wind/Earth/Neutral Dmg",
@@ -1063,13 +1069,13 @@ const DATA = {
               stat: "4% Fire/Water/Wind/Earth Dmg",
               note: "F2P",
             },
+            { br: true },
             {
               name: "+X Tahnee's Banana Boat",
               icon: "48130",
               stat: "Skill Dmg +0.5% per refine",
               note: "F2P",
             },
-            { br: true },
             {
               name: "+10 White Snake Chime",
               icon: "48087",

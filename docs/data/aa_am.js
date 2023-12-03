@@ -1233,6 +1233,12 @@ const DATA = {
               note: "Sep 2021 Blue Gacha",
             },
             {
+              name: "It's too late!",
+              icon: "3007260",
+              stat: "5% Move Speed, 1% Skill Dmg per 5% Move Speed above 100% (max 10%)",
+              note: "Sep 2023 Blue Gacha",
+            },
+            {
               name: "Peter Wendy",
               icon: "3001460",
               stat: "3% MPen +15% MPen for 5sec every 20sec",
@@ -1244,13 +1250,13 @@ const DATA = {
               stat: "8% Wind Dmg, 8% Stun chance and duration",
               note: "Oct 2019 Blue Gacha",
             },
+            { br: true },
             {
               name: "+6 Earl Daemon",
               icon: "3005192",
               stat: "4% Magic AoE Dmg, 4% Fire/Water/Wind/Earth/Neutral Dmg",
               note: "Oct 2019 Blue Gacha",
             },
-            { br: true },
             {
               name: "Sea Soul's Tail",
               icon: "48086",

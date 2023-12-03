@@ -795,18 +795,24 @@ const DATA = {
               note: "Sep 2021 Blue Gacha",
             },
             {
+              name: "It's too late!",
+              icon: "3007260",
+              stat: "5% Move Speed, 1% Skill Dmg per 5% Move Speed above 100% (max 10%)",
+              note: "Sep 2023 Blue Gacha",
+            },
+            {
               name: "Rock Bunny",
               icon: "3005690",
               stat: "10% Dmg to MVP",
               note: "Apr 2022 Blue Gacha",
             },
+            { br: true },
             {
               name: "Peter Wendy",
               icon: "3001460",
               stat: "3% MPen +15% MPen for 5sec every 20sec",
               note: "Apr 2020 Blue Gacha",
             },
-            { br: true },
             {
               name: "+X Summer Banana Split",
               icon: "48080",
