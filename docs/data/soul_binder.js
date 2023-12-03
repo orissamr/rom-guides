@@ -45,16 +45,26 @@ const DATA = {
               icon_card: "24113",
               stat: "17.5% Spell Crit, 5 Int/Luk",
             },
-            { br: true },
             {
               name: "Abysmal Knight ★ Card",
               icon_card: "24117",
               stat: "15% Dmg to MVP (+5% w/ depo)",
             },
+            { br: true },
+            {
+              name: "World Serpent Card",
+              icon_card: "23315",
+              stat: "5% Skill Dmg +0.5% per Weapon refine",
+            },
             {
               name: "Incantation Samurai Card",
               icon_card: "23055",
               stat: "15% MPen",
+            },
+            {
+              name: "Corruption Root Card",
+              icon_card: "23070",
+              stat: "15% All Race Dmg",
             },
             {
               name: "Fire Bird Chiri ★ Card",
@@ -190,6 +200,12 @@ const DATA = {
           row: 2,
           entries: [
             {
+              name: "Molten Colossus Card",
+              bold: true,
+              icon_card: "23316",
+              stat: "5% Dmg to MVP +1% per Armor refine (+5% w/ depo)",
+            },
+            {
               name: "Poi Tata ★ Card",
               bold: true,
               icon_card: "24670",
@@ -211,13 +227,13 @@ const DATA = {
               icon_card: "24039",
               stat: "15% Ignore MDef",
             },
+            { br: true },
             {
-              name: "Ghostring Card",
-              icon_card: "22004",
-              stat: "Ghost armor",
+              name: "Ghostring ★ Card",
+              icon_card: "24674",
+              stat: "Ghost armor, 10% Non-Ghost Reduc, 30% Ghost absorb",
               note: "for survivability in most content",
             },
-            { br: true },
             {
               name: "Sorcerer Card",
               light: true,
@@ -282,6 +298,12 @@ const DATA = {
               bold: true,
               icon_card: "23063",
               stat: "6% Skill Dmg +0.1% per 12 Str/Dex/Int",
+            },
+            {
+              name: "Golden Flame King Card",
+              bold: true,
+              icon_card: "23302",
+              stat: "15% Dmg to MVP",
             },
             {
               name: "Mayfair Linse Card",
@@ -356,6 +378,20 @@ const DATA = {
           row: 2,
           entries: [
             {
+              name: "Swordsman Cenia MVP Card",
+              bold: true,
+              icon_card: "23298",
+              stat: "5% Skill Dmg +1% per Shoe refine, 10% Move Speed",
+              note: "BCC Box",
+            },
+            {
+              name: "Swordsman Cenia Card",
+              bold: true,
+              icon_card: "23297",
+              stat: "5% Skill Dmg +0.5% per Shoe refine, 5% Move Speed",
+              note: "BCC Box",
+            },
+            {
               name: "Marionette ★ Card",
               bold: true,
               icon_card: "24069",
@@ -373,13 +409,13 @@ const DATA = {
               icon_card: "24071",
               stat: "3% MAtk",
             },
+            { br: true },
             {
               name: "Dark Lord ★ Card",
               light: true,
               icon_card: "24642",
               stat: '20% "Meteor Storm" proc on hit, 25% abnormal status res',
             },
-            { br: true },
             {
               name: "Moonlight Flower ★ Card",
               light: true,
@@ -454,6 +490,12 @@ const DATA = {
               stat: "10% Spell Crit, 20 Luk",
             },
             {
+              name: "Devil Governor Card",
+              bold: true,
+              icon_card: "23322",
+              stat: "5% Skill Dmg, 10% Final Dmg [unstackable] split on all targets (unsplit w/ depo)",
+            },
+            {
               name: "Moonlight Tendrilion ★ Card",
               icon_card: "24118",
               stat: "2% Skill Dmg, 3% Dmg to Non-Demihuman Race",
@@ -499,6 +541,12 @@ const DATA = {
               icon: "3006680",
               stat: "10% Ghost Dmg, 10% Final Dmg to weak element",
               note: "Nov 2022 Blue Gacha",
+            },
+            {
+              name: "Telebaby",
+              icon: "3007290",
+              stat: "25% Dmg to Large",
+              note: "Nov 2023 Blue Gacha",
             },
             {
               name: "+6 Abyssal Cry",
