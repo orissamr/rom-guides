@@ -406,6 +406,32 @@ const DATA = {
       ],
     },
     {
+      category: "Events",
+      sections: [
+        {
+          row: 1,
+          entries: [],
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Headwear Unlocking (Anniversary)",
+                      table_img: "event_anniversary_headwear",
+                      table_img_format: "webp",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
       category: "Maps",
       sections: [
         {
