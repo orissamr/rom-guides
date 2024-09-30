@@ -361,6 +361,31 @@ const DATA = {
       ],
     },
     {
+      category: "Runes",
+      sections: [
+        {
+          row: 1,
+          entries: [],
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Synergy Rates",
+                      table_img: "rune_synergy",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
       category: "Arcane Runes",
       sections: [
         {
