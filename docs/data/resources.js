@@ -171,6 +171,12 @@ const DATA = {
                   section: "",
                   entries: [
                     {
+                      table_title: "Refine Gacha Value",
+                      table_img: "refine_gacha_value",
+                      table_img_format: "jpg",
+                    },
+                    { br: true },
+                    {
                       table_title: "Shadow Equipment Upgrades",
                       table_img: "shadow_eq_upgrade",
                     },
