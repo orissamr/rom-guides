@@ -82,6 +82,10 @@ const DATA = {
                       table_title: "White Star Airship",
                       table_img: "stats_psr_airship",
                     },
+                    {
+                      table_title: "Constellation Tower V",
+                      table_img: "stats_constellation_tower",
+                    },
                   ],
                 },
               ],
