@@ -631,7 +631,11 @@ const DATA = {
                       table_title: "12v12 Items",
                       table_img: "12v12_items",
                     },
-                    { br: true },
+                    {
+                      table_title: "12v12 Items (detailed)",
+                      table_img: "12v12_items2",
+                      table_img_format: "jpg",
+                    },
                     {
                       table_title: "12v12 Shop",
                       table_img: "12v12_shop",
