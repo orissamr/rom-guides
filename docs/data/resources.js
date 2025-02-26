@@ -75,6 +75,11 @@ const DATA = {
                       table_img: "stats_oracle",
                     },
                     {
+                      table_title: "Oracle Dungeon XVII-XVIII",
+                      table_img: "stats_oracle_17_18",
+                      table_img_format: "jpg",
+                    },
+                    {
                       table_title: "Ponape Secret Realm",
                       table_img: "stats_psr",
                     },
@@ -441,6 +446,37 @@ const DATA = {
       ],
     },
     {
+      category: "Equipment Memory",
+      sections: [
+        {
+          row: 1,
+          entries: [],
+          subsections: [
+            {
+              align: "column",
+              sections: [
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Memory Slots",
+                      table_img: "memory_position",
+                    },
+                    { br: true },
+                    {
+                      table_title: "Memory Stats",
+                      table_img: "memory_stats",
+                      table_img_format: "jpg",
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    },
+    {
       category: "Events",
       sections: [
         {
@@ -613,6 +649,15 @@ const DATA = {
                     {
                       table_title: "Kafra Premium - Global [Oct 16, 2023]",
                       table_img: "kafra_premium_231016",
+                    },
+                  ],
+                },
+                {
+                  section: "",
+                  entries: [
+                    {
+                      table_title: "Whale Cards",
+                      table_img: "rev_star_cards",
                     },
                   ],
                 },
